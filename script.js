@@ -140,6 +140,30 @@ jsQ(".section.one .section-header-container .text.two");
 jsQ(".globalnav .globalnav-link-home svg");
 jsQ(".globalnav .globalnav-link-text .letter");
 
+anime.timeline({loop:false})
+    .add({
+        targets:".section.three .planet-alert",
+        opacity: [0,1],
+        scale: [0.2,1],
+        duration:800,
+        delay:5000,
+    })
+
+    .add({
+        targets:".section.three .planet-alert",
+        opacity: 0,
+        scale: 3,
+        duration: 600,
+        delay: 5000,
+        easing: "easeInExpo",
+    })
+
+    .add({
+        targets:".section.three .planet-alert",
+        scale:0,
+        duration:1,
+    })
+
 gsap.utils.toArray(".section.section-parallax-background").forEach((section, i) => {
     section.bg = section.querySelector(".section-background"); 
 
@@ -251,5 +275,15 @@ gsap.utils.toArray(".section.four .activity-panel .text.three").forEach((item) =
 
 jsQ(".section.four .text.three");
 
+gsap.to(".section.four",{css:{scale:0.5,translateY:"25%"},
+    scrollTrigger: {
+        trigger:".section.four",
+        start:"bottom bottom",
+        end:"+=400",
+        ease:"power2.in",
+        markers:false,
+        scrub:true,
+    }
+});
 
 });

@@ -113,19 +113,24 @@ body {
     transform: rotate(26deg) translateY(0);
 }
 
+.section.three .planet-alert {
+    position: absolute;
+    bottom: 76px;
+    width: fit-content;
+    left: 212px;
+}
+
+.section.three .planet-alert .text {
+    width: 34vw;
+}
+
 .section.four {
     align-items: flex-end!important;
+    transition: transform 50ms linear 0s;
+    background-image: url(../img/spaceBackground/green/2.png);
 }
 
 .section.four * {
     z-index: 2;
 }
 
-.section.four .section-background {
-    background-image: url(../img/spaceBackground/green/2.png);
-    top: 200vh;
-    width: 100vw;
-    position: absolute;
-    height: 135vh;
-    z-index:1;
-}
