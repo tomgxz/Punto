@@ -1,0 +1,155 @@
+::-webkit-scrollbar {
+    /*display:none;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,h1 {
+    margin:0;
+    padding:0;
+}
+
+body {
+    min-height:100vh;
+    width:100vw;
+    overflow-x:hidden;
+    background:var(--colors-light);
+}
+
+ol, ul {
+    list-style:none;
+}
+
+nav ol, nav ul {
+    margin:0;
+    list-style: none;
+}
+
+.visibly-hidden {
+    visibility:hidden!important;
+    position:absolute!important;
+    top:0!important;
+    left:0!important;
+    width:0px!important;
+    height:0px!important;
+}
+
+.notextselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nopointerevents {
+    pointer-events:none;
+}
+
+.text {
+    font-family: "Rubik";
+    font-weight: 400;
+    color: var(--colors-light);
+    width:fit-content;
+    font-size:16px;
+}
+
+.text.link,a {
+    color: var(--colors-light);
+    text-decoration:none;
+}
+
+.text.header {
+    font-family: "Varela Round";
+    font-weight: 400;
+    font-size:32px;
+}
+
+.text.header.jumbo {
+    font-family: "Varela Round";
+    font-weight: 400;
+    font-size:64px;
+    letter-spacing:10px;
+}
+
+.text.font-one {
+    font-family:"Rubik";
+}
+
+.text.thick {
+    font-family:"Rubik Mono One";
+}
+
+.text.thin {
+    font-family:"IBM Plex Sans";
+    font-weight:100;
+}
+
+.text.font-two {
+    font-family:"Varela Round";
+}
+
+.text.light {
+    color: var(--colors-light);
+}
+
+.text.dark {
+    color: var(--colors-dark);
+}
+
+.text.primary {
+    color: var(--colors-primary);
+}
+
+
+
+em {
+    font-style:normal;
+    display:inline-block;
+}
+
+.text.light em {
+    color:var(--colors-accent-light);
+}
+
+.text.primary em {
+    color:var(--colors-light);
+}
+
+.text.dark em {
+    color:var(--colors-secondary-light);
+}
+
+.text-reveal-line {
+    display: inline-block;
+    content: "";
+    opacity: 0;
+    position: relative;
+    left: -10px;
+    height: 70%;
+    width: 4px;
+    transform-origin: 0 50%;
+    border-radius: 1em;
+    transform:translateY(5px);
+}
+
+.text-reveal-line.light {
+    background-color: var(--colors-light);
+}
+
+.text-reveal-line.dark {
+    background-color: var(--colors-dark);
+}
+
+.element.fixed {
+    position:fixed;
+}
+
+.element.abs {
+    position:absolute;
+}

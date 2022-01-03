@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;1,100&display=swap');
+
+:root {
+    --colors-primary-light:#460080;
+    --colors-primary:#350170;
+    --colors-primary-dark:#230161;
+
+    --colors-secondary-light:#006466;
+    --colors-secondary:#0B525B;
+    --colors-secondary-dark:#1B3A4B;
+
+    --colors-accent-light:#5C1E5C;
+    --colors-accent:#4D194D;
+    --colors-accent-dark:#3E1F47;
+
+    --colors-light:#E7E7E7;
+    --colors-dark:#141314;
+
+    --colors-primary-light-rgb:70, 0, 128;
+    --colors-primary-rgb:53, 1, 112;
+    --colors-primary-dark-rgb:35, 1, 97;
+
+    --colors-secondary-light-rgb:0, 100, 102;
+    --colors-secondary-rgb:11, 82, 91;
+    --colors-secondary-dark-rgb:27, 58, 75;
+
+    --colors-accent-light-rgb:92, 30, 92;
+    --colors-accent-rgb:77, 25, 77;
+    --colors-accent-dark-rgb:62, 31, 71;
+
+    --colors-light-rgb:231, 231, 231;
+    --colors-dark-rgb:20, 19, 20;
+
+    --colors-grey-100:#;
+    --colors-grey-200:#;
+    --colors-grey-300:#;
+    --colors-grey-400:#;
+    --colors-grey-500:#3e3e3e;
+    --colors-grey-600:#;
+    --colors-grey-700:#;
+    --colors-grey-800:#171717;
+}

@@ -1,0 +1,131 @@
+body {
+    background-color:var(--colors-grey-800);
+}
+
+.section:not(.section.two) {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+}
+
+.section-parallax-background * {
+    z-index:2;
+}
+
+.section-parallax-background .section-background {
+    position:absolute;
+    top:0;
+    left:0;
+    width:inherit;
+    height:inherit;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    z-index:1;
+}
+
+.section.one {
+    align-items: flex-end!important;
+}
+
+.section.one .section-content {
+    width: 100%;
+    height: calc(100% - 96px);
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.section.one .section-header-container {
+    display:flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+}
+
+.section.one .section-header-container * {
+    text-align: -webkit-center;
+    text-align: center;
+}
+
+.section.one .section-header-container .text.one {
+    padding-bottom:56px;
+}
+
+.section.two {
+    position: absolute;
+    z-index: 2;
+    width: 0px;
+    height: 0px;
+}
+
+.section.two .info-banner.one::before {
+    background-image:url(../img/spaceBackground/purple/4.png);
+}
+
+.section.two .info-banner.two::before {
+    background-image:url(../img/spaceBackground/blue/3.png);
+}
+
+.section.two .info-banner.three::before {
+    background-image:url(../img/spaceBackground/dark/2.png);
+}
+
+.section.three .planet {
+    position:fixed;
+    bottom:0;
+    left:0;
+    margin-bottom:32px;
+    margin-left:16px;
+}
+
+.section.three .planet .planet-planet {
+    width:128px;
+    filter: hue-rotate(59deg);
+}
+
+.section.three .planet .planet-rags {
+    position: absolute;
+    left: 34px;
+    bottom: 58px;
+    -webkit-transform: rotate(24deg) translateY(10px);
+    transform: rotate(24deg) translateY(10px);
+    z-index:-1;
+    filter: saturate(0.5);
+    width:128px;
+
+    opacity:0;
+    -webkit-transition:opacity 200ms linear, transform 200ms linear, -webkit-transform 200ms linear;
+    transition:opacity 200ms linear, transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+.section.three .planet:hover .planet-rags {
+    opacity:1;
+    -webkit-transform: rotate(26deg) translateY(0);
+    transform: rotate(26deg) translateY(0);
+}
+
+.section.four {
+    align-items: flex-end!important;
+}
+
+.section.four * {
+    z-index: 2;
+}
+
+.section.four .section-background {
+    background-image: url(../img/spaceBackground/green/2.png);
+    top: 200vh;
+    width: 100vw;
+    position: absolute;
+    height: 135vh;
+    z-index:1;
+}
