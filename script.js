@@ -237,7 +237,7 @@ gsap.utils.toArray(".section.four .activity-panel").forEach((item) =>{
     gsap.to(item,{css:{opacity:1},
         scrollTrigger: {
             trigger:item,
-            start:"top+=200 bottom",
+            start:"top+=100 bottom",
             end:"+=200",
             markers:false,
             scrub:true,
@@ -275,15 +275,50 @@ gsap.utils.toArray(".section.four .activity-panel .text.three").forEach((item) =
 
 jsQ(".section.four .text.three");
 
-gsap.to(".section.four",{css:{scale:0.5,translateY:"25%"},
+gsap.to(".section.four",{css:{scale:0.5,translateY:"25%",opacity:0},
     scrollTrigger: {
         trigger:".section.four",
         start:"bottom bottom",
         end:"+=400",
-        ease:"power2.in",
+        ease:"power4.in",
         markers:false,
         scrub:true,
     }
+});
+
+jsQ(".section.four");
+
+gsap.utils.toArray(".section.five .headline").forEach((item) => {
+    gsap.to(item,{css:{opacity:1},
+        scrollTrigger: {
+            trigger:item,
+            start:"bottom bottom-=100",
+            end:"+=150",
+            scrub:true,
+        }
+    });
+
+    gsap.to(item,{css:{opacity:0},
+        scrollTrigger: {
+            trigger:item,
+            start:"top-=150 top+=100",
+            end:"top top+=100",
+            scrub:true,
+        }
+    });
+});
+
+
+gsap.utils.toArray(".section.five .headline .svg-icon path").forEach((item) => {
+    gsap.to(item,{css:{strokeDashoffset:0},
+        scrollTrigger: {
+            trigger:item,
+            start:"bottom bottom-=100",
+            end:"+=400",
+            markers:false,
+            scrub:true,
+        }
+    });
 });
 
 });

@@ -153,3 +153,7 @@ em {
 .element.abs {
     position:absolute;
 }
+
+.box {
+    border-radius:16px;
+}
