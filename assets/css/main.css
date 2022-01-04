@@ -94,6 +94,10 @@ nav ol, nav ul {
     font-family:"Varela Round";
 }
 
+.text.bold {
+    font-weight:700;
+}
+
 .text.light {
     color: var(--colors-light);
 }

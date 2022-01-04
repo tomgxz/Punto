@@ -275,7 +275,7 @@ gsap.utils.toArray(".section.four .activity-panel .text.three").forEach((item) =
 
 jsQ(".section.four .text.three");
 
-gsap.to(".section.four",{css:{scale:0.5,translateY:"25%",opacity:0},
+gsap.to(".section.four",{css:{scale:0.5,translateY:"25%",opacity:0,borderRadius:"3em"},
     scrollTrigger: {
         trigger:".section.four",
         start:"bottom bottom",
@@ -293,32 +293,146 @@ gsap.utils.toArray(".section.five .headline").forEach((item) => {
         scrollTrigger: {
             trigger:item,
             start:"bottom bottom-=100",
-            end:"+=150",
+            end:"+=200",
+            markers:false,
             scrub:true,
         }
     });
 
-    gsap.to(item,{css:{opacity:0},
-        scrollTrigger: {
-            trigger:item,
-            start:"top-=150 top+=100",
-            end:"top top+=100",
-            scrub:true,
-        }
-    });
 });
 
 
 gsap.utils.toArray(".section.five .headline .svg-icon path").forEach((item) => {
-    gsap.to(item,{css:{strokeDashoffset:0},
+    if (item.classList.contains("headline-slower")) {
+
+        gsap.from(item,{css:{strokeDashoffset:400}});
+
+        gsap.to(item,{css:{strokeDashoffset:0},
+            scrollTrigger: {
+                trigger:item,
+                start:"bottom bottom-=100",
+                end:"top top",
+                markers:false,
+                scrub:true,
+            }
+        });
+
+    } else {
+
+        gsap.from(item,{css:{strokeDashoffset:800}});
+
+        gsap.to(item,{css:{strokeDashoffset:0},
+            scrollTrigger: {
+                trigger:item,
+                start:"bottom bottom-=100",
+                end:"+=800",
+                markers:false,
+                scrub:true,
+            }
+        });
+
+    }
+});
+
+gsap.utils.toArray(".color-animation").forEach((item) => {
+    item.style.setProperty("--color-animation-changed",item.getAttribute("data-animate-color-startcolor"));
+
+    gsap.to(item, {"--color-animation-changed":item.getAttribute("data-animate-color-endcolor"),
         scrollTrigger: {
             trigger:item,
-            start:"bottom bottom-=100",
-            end:"+=400",
+            start:item.getAttribute("data-animate-color-start"),
+            end:item.getAttribute("data-animate-color-end"),
+            ease:item.getAttribute("data-animate-color-ease"),
             markers:false,
             scrub:true,
         }
     });
 });
+
+gsap.utils.toArray(".opacity-animation").forEach((item) => {
+    item.style.opacity=item.getAttribute("data-animate-opacity-startopacity");
+
+    gsap.to(item, {css:{opacity:item.getAttribute("data-animate-opacity-endopacity")},
+        scrollTrigger: {
+            trigger:item,
+            start:item.getAttribute("data-animate-opacity-start"),
+            end:item.getAttribute("data-animate-opacity-end"),
+            ease:item.getAttribute("data-animate-opacity-ease"),
+            markers:false,
+            scrub:true,
+        }
+    });
+});
+
+gsap.utils.toArray(".translateX-animation").forEach((item) => {
+    gsap.from(item, {css:{x:item.getAttribute("data-animate-translateX-startpos")}});
+
+    gsap.to(item, {css:{x:item.getAttribute("data-animate-translateX-endpos")},
+        scrollTrigger: {
+            trigger:item,
+            start:item.getAttribute("data-animate-translateX-start"),
+            end:item.getAttribute("data-animate-translateX-end"),
+            ease:item.getAttribute("data-animate-translateX-ease"),
+            markers:true,
+            scrub:true,
+        }
+    });
+});
+
+gsap.utils.toArray(".translateY-animation").forEach((item) => {
+    gsap.from(item, {css:{y:item.getAttribute("data-animate-translateY-startpos")}});
+
+    gsap.to(item, {css:{y:item.getAttribute("data-animate-translateY-endpos")},
+        scrollTrigger: {
+            trigger:item,
+            start:item.getAttribute("data-animate-translateY-start"),
+            end:item.getAttribute("data-animate-translateY-end"),
+            ease:item.getAttribute("data-animate-translateY-ease"),
+            markers:true,
+            scrub:true,
+        }
+    });
+});
+
+
+const asteroidCanvas = document.getElementById("asteroid-animation-canvas");
+const context = canvas.getContext("2d");
+
+canvas.width = 1158;
+canvas.height = 770;
+
+const frameCount = 147;
+const currentFrame = index => (
+  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(index + 1).toString().padStart(4, '0')}.jpg`
+);
+
+const images = []
+const airpods = {
+  frame: 0
+};
+
+for (let i = 0; i < frameCount; i++) {
+  const img = new Image();
+  img.src = currentFrame(i);
+  images.push(img);
+}
+
+gsap.to(airpods, {
+  frame: frameCount - 1,
+  snap: "frame",
+  scrollTrigger: {
+    scrub: 0.5
+  },
+  onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
+});
+
+images[0].onload = render;
+
+function render() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(images[airpods.frame], 0, 0); 
+}
+
+
 
 });
