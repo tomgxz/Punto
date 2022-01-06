@@ -9,7 +9,7 @@ function letterWrapper(query) {
 
 function jsQ(query) {
     try {
-        document.querySelectorAll(query).forEach((item) => {item.classList.add("jsedited")});
+        document.querySelectorAll(query).forEach((item) => {item.classList.add("js")});
     } catch(e) {
         console.log(e)
     }
@@ -17,7 +17,7 @@ function jsQ(query) {
 
 function jsE(el) {
     try {
-        el.classList.add("jsedited");
+        el.classList.add("js");
     } catch(e) {
         console.log(e)
     }
@@ -33,42 +33,42 @@ gsap.registerPlugin(ScrollTrigger);
 letterWrapper(".globalnav .globalnav-link-text");
 letterWrapper(".section.one .section-header-container .text.one");
 
-document.querySelectorAll(".globalnav .globalnav-link-text .letter, .globalnav .globalnav-link-text:before").forEach((item) => {item.style.opacity=0;item.style.translateX=40;jsE(item);
+gsap.utils.toArray(".globalnav .globalnav-link-text .letter, .globalnav .globalnav-link-text:before").forEach((item) => {item.style.opacity=0;item.style.translateX=40;jsE(item);
 });
 
-document.querySelectorAll(".globalnav .globalnav-link-home svg").forEach((item) => {
+gsap.utils.toArray(".globalnav .globalnav-link-home svg").forEach((item) => {
     item.style.opacity=0;item.style.translateY=60;jsE(item);
 });
 
-document.querySelectorAll(".section.one .section-header-container .text-reveal-line.one").forEach((item) => {
+gsap.utils.toArray(".section.one .section-header-container .text-reveal-line.one").forEach((item) => {
     item.style.opacity=0;item.style.scaleY=0;item.style.translateX=0;jsE(item);
 });
 
-document.querySelectorAll(".section.one .section-header-container .text.one .letter").forEach((item) => {
+gsap.utils.toArray(".section.one .section-header-container .text.one .letter").forEach((item) => {
     item.style.opacity=0;jsE(item);
 });
 
-document.querySelectorAll(".section.one .section-header-container .text.two").forEach((item) => {
+gsap.utils.toArray(".section.one .section-header-container .text.two").forEach((item) => {
     item.style.opacity=0;jsE(item);
 });
 
-document.querySelectorAll(".section.two").forEach((item) => {
+gsap.utils.toArray(".section.two").forEach((item) => {
     item.style.opacity=0;jsE(item);
 });
 
-document.querySelectorAll(".globalnav .globalnav-content").forEach((item) => {
+gsap.utils.toArray(".globalnav .globalnav-content").forEach((item) => {
     item.style.opacity=1;jsE(item);
 });
 
-document.querySelectorAll(".section.four .activity-panel").forEach((item) => {
+gsap.utils.toArray(".section.four .activity-panel").forEach((item) => {
     item.style.opacity=0;jsE(item);
 })
 
-document.querySelectorAll(".section.four .text.two").forEach((item) => {
+gsap.utils.toArray(".section.four .text.two").forEach((item) => {
     item.style.opacity=0;jsE(item);
 })
 
-document.querySelectorAll(".section.four .text.three").forEach((item) => {
+gsap.utils.toArray(".section.four .text.three").forEach((item) => {
     item.style.opacity=0;jsE(item);
 })
 
@@ -373,7 +373,6 @@ gsap.utils.toArray(".translateX-animation").forEach((item) => {
             start:item.getAttribute("data-animate-translateX-start"),
             end:item.getAttribute("data-animate-translateX-end"),
             ease:item.getAttribute("data-animate-translateX-ease"),
-            markers:true,
             scrub:true,
         }
     });
@@ -388,51 +387,61 @@ gsap.utils.toArray(".translateY-animation").forEach((item) => {
             start:item.getAttribute("data-animate-translateY-start"),
             end:item.getAttribute("data-animate-translateY-end"),
             ease:item.getAttribute("data-animate-translateY-ease"),
-            markers:true,
             scrub:true,
         }
     });
 });
 
+function canvasAnimation(id,w,h,link,frames,zeroCount) {
 
-const asteroidCanvas = document.getElementById("asteroid-animation-canvas");
-const context = canvas.getContext("2d");
+    // link format should be "[prefix]/[filename before the number]{}.[filetype]"
 
-canvas.width = 1158;
-canvas.height = 770;
+    const canvas = document.getElementById(id);
+    const context = canvas.getContext("2d");
 
-const frameCount = 147;
-const currentFrame = index => (
-  `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${(index + 1).toString().padStart(4, '0')}.jpg`
-);
+    const frameCount = frames;
 
-const images = []
-const airpods = {
-  frame: 0
-};
+    //const currentFrame = index => (
+    //    "./assets/animation/asteroid/frames/image{}.jpg".replace("{}",(index+1).toString().padStart(4,"0"))
+    //)
 
-for (let i = 0; i < frameCount; i++) {
-  const img = new Image();
-  img.src = currentFrame(i);
-  images.push(img);
+    const currentFrame = index => (
+        link.replace("{}",(index+1).toString().padStart(zeroCount,"0"))
+    )
+
+    canvas.width=w;
+    canvas.height=h;
+
+
+    const images = []
+    const image = {
+        frame: 0
+    };
+
+    for (let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = currentFrame(i);
+        images.push(img);
+    }
+
+    gsap.to(image, {
+        frame: frameCount - 1,
+        snap: "frame",
+        scrollTrigger: {
+            scrub: 0.5
+        },
+        onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
+    });
+
+    images[0].onload = render;
+
+    function render() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(images[image.frame], 0, 0, canvas.width, canvas.height); 
+    }
+
 }
 
-gsap.to(airpods, {
-  frame: frameCount - 1,
-  snap: "frame",
-  scrollTrigger: {
-    scrub: 0.5
-  },
-  onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
-});
-
-images[0].onload = render;
-
-function render() {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(images[airpods.frame], 0, 0); 
-}
-
-
+//canvasAnimation("asteroid-animation-canvas",1280,720,"https://ik.imagekit.io/tomgxzqyhsjrf5hif/animation_frames_asteroid_1/frames_jpg/image{}.jpg?tr=w-1280,h-720",237,3)
 
 });

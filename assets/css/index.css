@@ -182,7 +182,7 @@ body {
 
 .bento-container {
     width:75%;
-    height:1656px;
+    height: 1340px;
 }
 
 .bento {
@@ -195,7 +195,7 @@ body {
         "sizes sizes edge"
         "water water edge";
     grid-template-columns: 425px 1fr 341px;
-    grid-template-rows: 546px auto 234px;
+    grid-template-rows: 546px auto 339px;
     height:100%
 }
 
@@ -205,19 +205,19 @@ body {
 }
 
 .bento.primary .bento-box {
-    background-color:var(--colors-primary);
+    --bento-color:var(--colors-primary);
 }
 
 .bento.secondary .bento-box {
-    background-color:var(--colors-secondary);
+    --bento-color:var(--colors-secondary);
 }
 
 .bento.accent .bento-box {
-    background-color:var(--colors-accent);
+    --bento-color:var(--colors-accent);
 }
 
 .bento-box.color-animation {
-    background-color:var(--color-animation-changed)!important;
+    --bento-color:var(--color-animation-changed)!important;
 }
 
 
@@ -255,45 +255,97 @@ body {
 .bento-box.one .text-content {
     margin-bottom: 324px;
     padding: 37px 41px;
-    width:343px
+    width:100%
+}
+
+.bento-box.one .text-content .text {
+    width: 100%;
+    text-align: end;
 }
 
 .bento-box.two .text-content {
-    padding-top: 300px;
-    padding-left: 45px;
+    padding-top: 177px;
+    padding-left: 107px;
     padding-bottom: 37px;
-    width:400px;
+    width: 400px;
+}
+
+.bento-box.three .text-content {
+    width:50%;
+    margin-top:22%;
+    padding-left: 32px;
+}
+
+.bento-box.four .text-content {
+    margin-top: 269px;
+    padding: 36px 40px;
+    width: fit-content;
+    margin-left: 36px;
 }
 
 .bento-box {
     position: relative;
     display:inline-block;
+    background-color:var(--bento-color);
 }
 
-.bento-box.one .bento-figure {
+.bento-box * {
+    z-index: 1;
+}
+
+.bento-box .bento-figure {
     background-position-y: bottom;
     width: 100%;
     height: inherit;
     background-size: contain;
     background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.bento-box.one .bento-figure.one {
     background-image: url(../img/svg/sketches/4S1ft801.svg);
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
 }
 
-.bento-box.two .bento-figure {
-    background-position-y: bottom;
-    width: 100%;
-    height: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
+.bento-box.one .bento-figure.two {
+    background-image: url(../img/backpack/black2.png);
+    background-position-x: -102px;
+    background-position-y: -35px;
+    transform-origin: top left;
+    transform: rotate(6deg);
+}
+
+.bento-box.two .bento-figure.one {
     background-image: url(../img/svg/sketches/3tSOJh01.svg);
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
 }
 
+.bento-box.two .bento-figure.two {
+    background-image: url(../img/backpack/blue2.png);
+    background-position-x: 184px;
+    background-position-y: 159px;
+}
+
+.bento-box.three .bento-figure.one {
+    background-image: url(../img/backpack/pink2.png);
+    background-position-x: right;
+}
+
+.bento-box.four .bento-figure.one {
+    background-image: url(../img/backpack/green2.png);
+}
+
+.bento-box.five .bento-figure.one {
+    background-image: url(../img/backpack/silver2.png);
+    background-position-x: -36px;
+}
+
+.bento-box.five .text-content {
+    width: 40%;
+    margin-left: 55%;
+    text-align: right;
+    margin-top: 20%;
+}
 
 .headline.colored .svg-icon path {
     stroke:var(--headline-color)!important;
@@ -301,4 +353,32 @@ body {
 
 .headline.colored .text {
     color:var(--headline-color);
+}
+
+.section.seven .animation-container {
+    width:100vw;
+    height:720px;
+}
+
+.section.seven .animation-container .animation-canvas {
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (max-width:1160px) {
+    .section.six .bento.one {
+        grid-template-columns: 3fr 1fr 2fr;
+    }
+    .section.six .bento-container {
+        width:90%;
+    }
+}
+
+.headline .text {
+    overflow-wrap:anywhere;
+}
+
+.activity-panel-body {
+    overflow: hidden;
 }
