@@ -63,6 +63,7 @@
     align-items: center;
 }
 
+.globalnav .globalnav-logo,
 .globalnav .globalnav-item {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -141,17 +142,96 @@
     padding-right:8px;
 }
 
+.globalnav-hamburger {
+    display:none!important;
+}
+
 
 @media screen and (max-width:800px) {
     .globalnav .globalnav-content {
-        padding: 0;
-        position: absolute;
-        top: 0;
         width: 100%;
         height: 100%;
     }
 
     .globalnav .globalnav-header {
         display: block;
+    }
+}
+
+@media screen and (max-width:680px) {
+    ul.globalnav-list {
+        top: -100%;
+        left: 8px;
+        background-color: var(--colors-grey-800);
+        background-image: url(../img/spaceBackground/cyan/5.png);
+        background-size: cover;
+        background-position-x: center;
+        background-blend-mode: color-dodge;
+        width: 100vw!important;
+        height: 100vh!important;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly!important;
+        transition: top 500ms cubic-bezier(.12,.11,0,.78);
+    }
+
+    .globalnav-item {
+        height: 10%;
+        transform:translateX(48px);
+        opacity:0;
+        transition:transform 200ms ease-out, opacity 200ms ease-out;
+    }
+
+    .globalnav-item .link {
+        opacity:1;
+    }
+
+    .globalnav-hamburger {
+        display:inline-block!important;
+        opacity:1;
+    }
+
+    .globalnav {
+        position:fixed;
+        height:60px;
+    }
+
+    .globalnav .globalnav-content {
+        opacity:1!important;
+    }
+
+    .globalnav .globalnav-link-home svg {
+        padding-top:8px;
+        padding-bottom:8px;
+    }
+
+    ul.globalnav-list.is-active {
+        top:0;
+    }
+
+    ul.globalnav-list.is-active .globalnav-item {
+        opacity:1;
+        transform:translateX(0);
+    }
+
+    .globalnav-item.one {
+        transition-delay: .5s, .5s;
+    }
+
+    .globalnav-item.two {
+        transition-delay: .55s, .55s;
+    }
+
+    .globalnav-item.three {
+        transition-delay: .6s, .6s;
+    }
+
+    .globalnav-link {
+        opacity:1!important;
+    }
+
+    .globalnav-link:before {
+        content:none;
     }
 }

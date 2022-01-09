@@ -118,3 +118,24 @@
 .info-banner.image-background:hover::before {
     background-size:450%;
 }
+
+@media screen and (max-width:1040px) {
+    .info-banner {
+        transform: translateY(-50%);
+    }
+
+    .info-banner.one {
+        right:16px;
+        transform: translateY(-50%) translateX(-100%);
+    }
+
+    .info-banner.two {
+        left: 50vw;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .info-banner.three {
+        left: 16px;
+        transform: translateY(-50%);
+    }
+}
