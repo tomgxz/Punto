@@ -310,3 +310,92 @@ body {
 .timeline-item-text-container.lower-height {
     top:8px;
 }
+
+.section.five .section-header-content {
+    display: flex;
+    flex-direction:column;
+}
+
+.compare-vertical-graph {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.compare-vertical-graph .compare-vertical-graph-item {
+    position: relative;
+    width: 326.667px;
+    margin-left: 32px;
+    margin-right: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.compare-vertical-graph .compare-vertical-graph-icons {
+    height: 442px;
+}
+
+.compare-vertical-graph-header-text-container {
+    display: flex;
+    justify-content:center;
+    margin-top: 32px;
+}
+
+.compare-vertical-graph-header-text-container .text {
+    text-transform:uppercase;
+}
+
+.compare-vertical-graph-percent {
+    display: flex;
+    justify-content: center;
+}
+
+.compare-vertical-graph-item-content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.compare-horizontal-graph {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.compare-horizontal-graph-item {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 980px;
+}
+
+.compare-horizontal-graph-percent .text {
+    font-size: 94px;
+}
+
+.compare-horizontal-graph-icons {
+    position: relative;
+}
+
+.compare-horizontal-graph-item-caption .text {
+    text-transform: uppercase;
+}
+
+.compare-horizontal-graph-item-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.compare-horizontal-graph-item-container:not(:last-child) {
+    margin-bottom:32px;
+}
