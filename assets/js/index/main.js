@@ -202,10 +202,10 @@ $(document).ready(function () {
         jsE(section.bg);
 
         if (i) {
-            section.bg.style.backgroundPosition = `50% ${-innerHeight / 2}px`;
+            section.bg.style.backgroundPosition = `50% ${-innerHeight / 6}px`;
 
             gsap.to(section.bg, {
-                backgroundPosition: `50% ${innerHeight / 2}px`,
+                backgroundPosition: `50% ${innerHeight / 6}px`,
                 ease: "none",
                 scrollTrigger: {
                     trigger: section,
@@ -216,7 +216,7 @@ $(document).ready(function () {
             section.bg.style.backgroundPosition = "50% 0px"; 
 
             gsap.to(section.bg, {
-                backgroundPosition: `50% ${innerHeight / 2}px`,
+                backgroundPosition: `50% ${innerHeight / 6}px`,
                 ease: "none",
                 scrollTrigger: {
                     trigger: section,
