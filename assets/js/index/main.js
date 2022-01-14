@@ -580,4 +580,13 @@ $(document).ready(function () {
 
     });
 
+    var options = {
+        strings: ["Hi rags","Hi rag's^1000ssssssss","Copyright © 2021 Punto. All Rights Reserved.^2000",],
+        typeSpeed: 50,
+        smartBackspace: true,
+        loop:true,
+    };
+
+    var typed = new Typed('.footer-copyright .text.one', options);
+
 });

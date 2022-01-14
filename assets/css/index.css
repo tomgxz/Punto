@@ -568,3 +568,9 @@ body {
 .section.four .btn {
     align-self: center;
 }
+
+.typed-cursor {
+    color: var(--colors-light);
+    font-weight: 900;
+    transform: translateY(-1px);
+}
