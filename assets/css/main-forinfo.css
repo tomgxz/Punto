@@ -130,8 +130,10 @@ body {
     width:100vw;
     overflow-x:hidden;
     background-color:var(--body-background-color);
-    background:var(--body-background);
+    background-image:var(--body-background);
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     text-rendering: optimizeSpeed;
     margin: 0;
     padding: 0;

@@ -50,8 +50,8 @@
         <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
     </head>
-    <body class="visibly-hidden">
-        <nav class="globalnav notextselect" role="navigation">
+    <body class="visibly-hidden" data-page-id="punto-home-index">
+        <nav class="globalnav notextselect" style="position:fixed;" role="navigation">
             <div class="globalnav-content" style="overflow: hidden;">
                 <div class="globalnav-list">
                     <div class="globalnav-logo" role="button">
@@ -76,9 +76,9 @@
                     </div>
                     <ul id="globalnav-list" class="globalnav-list">
                         <li class="globalnav-item one" role="button">
-                            <a class="globalnav-link" onclick="if (document.getElementById('globalnav-list').classList.contains('is-active')) { document.getElementById('globalnav-hamburger').classList.toggle('is-active');document.getElementById('globalnav-list').classList.toggle('is-active'); };" href="#what-we-do" data-analytics-title="store">
-                            <span class="globalnav-link-text text light link">What We Do</span>
-                            <span class="globalnav-link-hidden-text visibly-hidden" aria-hidden="true">What We Do</span>
+                            <a class="globalnav-link" onclick="if (document.getElementById('globalnav-list').classList.contains('is-active')) { document.getElementById('globalnav-hamburger').classList.toggle('is-active');document.getElementById('globalnav-list').classList.toggle('is-active'); };" href="/info" data-analytics-title="store">
+                            <span class="globalnav-link-text text light link">Info</span>
+                            <span class="globalnav-link-hidden-text visibly-hidden" aria-hidden="true">Info</span>
                             </a>
                         </li>
                         <li class="globalnav-item two" role="button">
@@ -104,7 +104,7 @@
         </nav>
         <section id="home" class="section section-title section-parallax-background one" style="height:100vh;">
             <div class="section-background" role="img" aria-label="Space image background" style="background-color:#110e28;background-image:url(./assets/img/spaceBackground/purple/5.png);top:0vh"></div>
-            <div class="section-content">
+            <div class="section-content" style="padding-top: 96px;">
                 <div class="section-header-container">
                     <div style="display:flex;" role="heading">
                         <span class="text-reveal-line light one"></span>
@@ -368,7 +368,7 @@
         <section id="pricing" class="section section-pricing eight">
             <div class="section-content" style="width: 100vw;">
                 <div class="section-header-container" style="position:relative;width: 100vw;" role="heading">
-                    <h2 class="text header jumbo light one">
+                    <h2 class="text header jumbo light one" style="height: 166px;overflow:visible;">
                         <span class="sliding one" style="display: inline-block;">Pricing</span>
                         <br>
                         <span style="display: inline-block;">For</span>
@@ -500,6 +500,6 @@
 
         <script src="./assets/js/main.min.js"></script>
         <script src="./assets/js/gsap.js"></script>
-        <script src="./assets/js/index/main.min.js"></script>
+        <script src="./assets/js/index/main.js"></script>
     </body>
 </html>

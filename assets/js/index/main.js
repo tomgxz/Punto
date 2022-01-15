@@ -47,6 +47,48 @@ $(document).ready(function () {
                 item.style.opacity=0;item.style.translateY=60;jsE(item);
             });
 
+            document.querySelectorAll(".globalnav").forEach((item) => {
+                item.style.height=96
+            });
+
+            document.querySelectorAll(".globalnav-list").forEach((item) => {
+                item.style.height=96
+            });
+
+            document.querySelectorAll(".globalnav .globalnav-link-home svg").forEach((item) => {
+                item.style.paddingTop=24;item.style.paddingBottom=24;
+            });
+
+            gsap.to(".globalnav", {css:{height:52},
+                scrollTrigger: {
+                    trigger:".globalnav",
+                    start:"top+=1 top",
+                    end:"+=100",
+                    markers:false,
+                    scrub:true,
+                }
+            });
+
+            gsap.to(".globalnav-list", {css:{height:52},
+                scrollTrigger: {
+                    trigger:".globalnav",
+                    start:"top+=1 top",
+                    end:"+=100",
+                    markers:false,
+                    scrub:true,
+                }
+            });
+
+            gsap.to(".globalnav .globalnav-link-home svg", {css:{paddingTop:0,paddingBottom:0,},
+                scrollTrigger: {
+                    trigger:".globalnav",
+                    start:"top+=1 top",
+                    end:"+=100",
+                    markers:false,
+                    scrub:true,
+                }
+            });
+
             anime.timeline({loop:false,end: function() {
                     document.querySelectorAll(".section.one .section-header-container .text-reveal-line.one").forEach((item) => {
                         item.style.display="none";
@@ -227,19 +269,6 @@ $(document).ready(function () {
             });
         }
     });
-
-    gsap.to(".globalnav .globalnav-content", {css:{opacity:0},
-        scrollTrigger: {
-            trigger:".globalnav",
-            start:"top top",
-            end:"+=48",
-            ease:"power2.in",
-            markers:false,
-            scrub:true,
-        }
-    });
-
-    jsQ(".globalnav .globalnav-content");
 
     gsap.to(".section.two",{css:{opacity:1},
         scrollTrigger: {
@@ -459,7 +488,7 @@ $(document).ready(function () {
 
             jsQ(".section.eight .section-header-container .text.one");
 
-            gsap.to(".section.eight .section-header-container", {css:{position:"fixed",translateX:"-49%",left:"50%",top:"-40px",background:"var(--colors-grey-800)",marginBottom: 0,height: 170},
+            gsap.to(".section.eight .section-header-container", {css:{position:"fixed",translateX:"-49%",left:"50%",top:"-40px",background:"var(--colors-grey-800)",marginBottom: 0,height: 216},
                 scrollTrigger: {
                     trigger:".section.eight .section-header-container",
                     start:"top+=40 top",
