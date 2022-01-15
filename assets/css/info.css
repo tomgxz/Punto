@@ -1,7 +1,3 @@
-body {
-    background-color:var(--colors-grey-800);
-}
-
 .section {
     display:flex;
     align-items:center;
@@ -398,4 +394,22 @@ body {
 
 .compare-horizontal-graph-item-container:not(:last-child) {
     margin-bottom:32px;
+}
+
+.section.one .word-cloud-container svg {
+    transform: scale(1.2);
+}
+
+.section.two {
+    min-width:100vw;
+}
+
+@media only screen and (max-width:380px) {
+    .section.two {
+        margin-left:64px;
+    }
+
+    .section.two .section-header .text {
+        font-size:36px
+    }
 }
