@@ -655,6 +655,7 @@ img,picture,.image {
 
 .section .section-body {
     display: flex;
+    position:relative;
     width: 100%;
 }
 
