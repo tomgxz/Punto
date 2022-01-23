@@ -1,5 +1,54 @@
 $(document).ready(function () {
 
+    ScrollTrigger.matchMedia({
+        "(min-width: 681px)": function() {
+
+            document.querySelectorAll(".globalnav").forEach((item) => {
+                item.style.height=96
+            });
+
+            document.querySelectorAll(".globalnav-list").forEach((item) => {
+                item.style.height=96
+            });
+
+            document.querySelectorAll(".globalnav .globalnav-link-home svg").forEach((item) => {
+                item.style.paddingTop=24;item.style.paddingBottom=24;
+            });
+
+            gsap.to(".globalnav", {css:{height:52},
+                scrollTrigger: {
+                    trigger:".globalnav",
+                    start:"top+=1 top",
+                    end:"+=100",
+                    markers:false,
+                    scrub:true,
+                }
+            });
+
+            gsap.to(".globalnav-list", {css:{height:52},
+                scrollTrigger: {
+                    trigger:".globalnav",
+                    start:"top+=1 top",
+                    end:"+=100",
+                    markers:false,
+                    scrub:true,
+                }
+            });
+
+            gsap.to(".globalnav .globalnav-link-home svg", {css:{paddingTop:0,paddingBottom:0,},
+                scrollTrigger: {
+                    trigger:".globalnav",
+                    start:"top+=1 top",
+                    end:"+=100",
+                    markers:false,
+                    scrub:true,
+                }
+            });
+
+        }
+       
+    });
+
     document.querySelectorAll('.section.one .word-cloud-container svg path').forEach((item) => {
         item.style.opacity=0;
     });
@@ -12,62 +61,68 @@ $(document).ready(function () {
         delay: (el,i) => (750*Math.sqrt(i) | 0) + 500,
     });
 
-    gsap.to("body",{css:{backgroundSize:"500%"}})
 
-    console.log(document.body.style)
+    gsap.to("body",{"--background-rad-grad-c2-percent": "65%","--background-rad-grad-c3-percent": "100%",duration:10})
 
-    gsap.to("body",{css:{backgroundSize:"100%"},duration:5})
+    ScrollTrigger.matchMedia({
 
-    gsap.utils.toArray(".horizontal-section-container.one").forEach((item) => {
+        "(min-width: 681px)": function() {
 
-        gsap.to(item, {
-            xPercent: -100, 
-            x: () => innerWidth,
-            ease: "none",
-            scrollTrigger: {
-                trigger: item,
-                start: "top top",
-                end: "+=%".replace("%",innerWidth),
-                scrub: true,
-                pin: true,
-                anticipatePin: 1
-            }
-        });
-    });
+            gsap.utils.toArray(".horizontal-section-container.one").forEach((item) => {
 
-    gsap.utils.toArray(".horizontal-section-container.two").forEach((item) => {
+                gsap.to(item, {
+                    xPercent: -100, 
+                    x: () => innerWidth,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top top",
+                        end: "+=%".replace("%",innerWidth),
+                        scrub: true,
+                        pin: true,
+                        anticipatePin: 1
+                    }
+                });
+            });
 
-        gsap.to(item, {
-            xPercent: -100, 
-            x: () => innerWidth,
-            ease: "none",
-            scrollTrigger: {
-                trigger: item,
-                start: "top top",
-                end: "+=%".replace("%",innerWidth * 4),
-                scrub: true,
-                pin: true,
-                anticipatePin: 1
-            }
-        });
-    });
+            gsap.utils.toArray(".horizontal-section-container.two").forEach((item) => {
 
-    gsap.utils.toArray(".horizontal-section-container.three").forEach((item) => {
+                gsap.to(item, {
+                    xPercent: -100, 
+                    x: () => innerWidth,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top top",
+                        end: "+=%".replace("%",innerWidth * 4),
+                        scrub: true,
+                        pin: true,
+                        anticipatePin: 1
+                    }
+                });
+            });
 
-        gsap.to(item, {
-            xPercent: -100, 
-            x: () => innerWidth,
-            ease: "none",
-            scrollTrigger: {
-                trigger: item,
-                start: "top top",
-                end: "+=%".replace("%",innerWidth * 3),
-                scrub: true,
-                pin: true,
-                anticipatePin: 1
-            }
-        });
+            gsap.utils.toArray(".horizontal-section-container.three").forEach((item) => {
+
+                gsap.to(item, {
+                    xPercent: -100, 
+                    x: () => innerWidth,
+                    ease: "none",
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top top",
+                        end: "+=%".replace("%",innerWidth * 2),
+                        scrub: true,
+                        pin: true,
+                        anticipatePin: 1
+                    }
+                });
+            });
+
+        }
+
     });
 });
+
 
 

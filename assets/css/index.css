@@ -562,3 +562,221 @@ body[data-page-id="punto-home-index"] .typed-cursor {
     font-weight: 900;
     transform: translateY(-1px);
 }
+
+
+[data-grid-area=one].bento-box {
+    grid-column:1;
+    grid-row:1;
+}
+
+[data-grid-area=two].bento-box {
+    grid-column:2/4;
+    grid-row:1;
+}
+
+[data-grid-area=three].bento-box {
+    grid-column:1/3;
+    grid-row:2;
+}
+
+[data-grid-area=four].bento-box {
+    grid-column:3;
+    grid-row:2/4;
+}
+
+[data-grid-area=five].bento-box {
+    grid-column:1/3;
+    grid-row:3;
+}
+
+.bento-box.one .text-content {
+    margin-bottom: 324px;
+    padding: 37px 41px;
+    width:100%
+}
+
+.bento-box.one .text-content .text {
+    width: 100%;
+    text-align: end;
+}
+
+.bento-box.two .text-content {
+    padding-top: 177px;
+    padding-left: 107px;
+    padding-bottom: 37px;
+    width: 400px;
+}
+
+.bento-box.three .text-content {
+    width:50%;
+    margin-top:22%;
+    padding-left: 32px;
+}
+
+.bento-box.four .text-content {
+    margin-top: 269px;
+    padding: 36px 40px;
+    width: fit-content;
+    margin-left: 36px;
+}
+
+.bento-box.one .bento-figure.one {
+    background-image: url(../img/svg/sketches/4S1ft801.svg);
+}
+
+.bento-box.one .bento-figure.two {
+    background-image: url(../img/backpack/black2.png);
+    background-position-x: -102px;
+    background-position-y: -35px;
+    transform-origin: top left;
+    transform: rotate(6deg);
+}
+
+.bento-box.two .bento-figure.one {
+    background-image: url(../img/svg/sketches/3tSOJh01.svg);
+}
+
+.bento-box.two .bento-figure.two {
+    background-image: url(../img/backpack/blue2.png);
+    background-position-x: 184px;
+    background-position-y: 159px;
+}
+
+.bento-box.three .bento-figure.one {
+    background-image: url(../img/backpack/pink2.png);
+    background-position-x: right;
+}
+
+.bento-box.four .bento-figure.one {
+    background-image: url(../img/backpack/green2.png);
+}
+
+.bento-box.five .bento-figure.one {
+    background-image: url(../img/backpack/silver2.png);
+    background-position-x: -36px;
+}
+
+.bento-box.five .text-content {
+    width: 40%;
+    margin-left: 55%;
+    text-align: right;
+    margin-top: 20%;
+}
+
+.bento {
+    grid-template-columns: 425px 1fr 341px;
+    grid-template-rows: 546px auto 339px;
+}
+
+@media screen and (max-width:1040px) {
+    .bento-container {
+        height:1480px;
+    }
+
+    .bento {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 3fr 6fr 3fr 2fr;
+        grid-column-gap: 0;
+        grid-row-gap: 64px;
+    }
+
+    [data-grid-area=one].bento-box {
+        grid-column:1;
+        grid-row:1;
+    }
+
+    [data-grid-area=two].bento-box {
+        grid-column:1;
+        grid-row:2;
+    }
+
+    [data-grid-area=three].bento-box {
+        grid-column:1;
+        grid-row:3;
+    }
+
+    [data-grid-area=four].bento-box {
+        grid-column:1;
+        grid-row:4;
+    }
+
+    [data-grid-area=five].bento-box {
+        grid-column:1;
+        grid-row:5;
+    }
+
+    .bento-box.one .bento-figure.one,
+    .bento-box.two .bento-figure.one {
+        display:none;
+    }
+
+    .bento-box.one .bento-figure.two {
+        background-position-x: left;
+        background-position-y: center;
+        transform: rotate(0deg);
+    }
+
+    .bento-box.two .bento-figure.two {
+        background-position-x: right;
+        background-position-y: center;
+    }
+
+    .bento-box.three .bento-figure.one {
+        background-position-x: right;
+        transform: translateX(12%) translateY(10%);
+    }
+
+    .bento-box.five .bento-figure.one {
+        background-position-x: center;
+        background-position-y: 42px;
+    }
+
+    .bento-box.one .text-content {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-right: 6%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bento-box.two .text-content {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 6%;
+    }
+
+    .bento-box.three .text-content {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        padding-top: 32px;
+        padding-left: 6%;
+    }
+
+    .bento-box.four .text-content {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-end;
+        padding-right: 6%;
+        align-items: center;
+        text-align: right;
+    }
+
+    .bento-box.five .text-content {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 16px;
+        display: flex;
+        justify-content: center;
+    }
+}

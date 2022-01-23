@@ -51,9 +51,9 @@
         <link href="../assets/css/main-forinfo.css" rel="stylesheet" type="text/css" />
         <link href="../assets/css/info.css" rel="stylesheet" type="text/css" />
     </head>
-    <body class="visibly-hidden" data-page-id="punto-inf-index">
+    <body class="visibly-hidden" data-page-id="punto-info-index" style="--background-rad-grad-c2-percent:0%;--background-rad-grad-c3-percent:0%;--body-background: radial-gradient(circle, rgba(62,62,62,1) var(--background-rad-grad-c1-percent,0%), rgba(10,10,10,1) var(--background-rad-grad-c2-percent,65%), rgba(6,6,6,1) var(--background-rad-grad-c3-percent,100%));">
 
-        <nav class="globalnav notextselect" role="navigation">
+        <nav class="globalnav notextselect fixed" role="navigation">
             <div class="globalnav-content" style="overflow: hidden;">
                 <div class="globalnav-list">
                     <div class="globalnav-logo" role="button">
@@ -221,21 +221,29 @@
 
             <section id="timeline" class="section section-timeline four width-fit-content">
                 <div class="section-content width-fit-content">
+                    <div class="section-header width-fit-content" style="margin-bottom: 32px;">
+                        <div class="section-header-content justify-content-start width-fit-content">
+                            <h2 class="text light header">Timeline so far</h2>
+                            <svg viewbox="0 0 40 4" style="width:40px;height:4px;">
+                                <rect x="0" y="0" fill="var(--colors-primary)" width="40" height="4"></rect>
+                            </svg>
+                        </div>
+                    </div>
                     <div class="section-body">
                         <div class="timeline-container">
                             <svg class="timeline-line">
-                                <polyline points="100,258 1080,259" style="fill: none; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1; stroke-dasharray: 0;"></polyline>
+                                <polyline points="100,258 1080,259" style="fill: none; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1; stroke-dasharray: 0;"></polyline>
                             </svg>
                             <div class="timeline-marker timeline-marker-start">
                                 <svg class="timeline-marker-line">
                                     <g>
-                                        <rect x="98" y="30" width="2" height="40" fill="rgb(93, 166, 181)"></rect>
+                                        <rect x="98" y="30" width="2" height="40" fill="var(--colors-primary)"></rect>
                                     </g>
                                 </svg>
                                 <h4 class="timeline-marker-text text light one">Creation</h4>
                             </div>
-                            <div class="timeline-item" style="left: 115px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 107.453px; left: -25px; width: 300px; height: 75.5469px;">
+                            <div class="timeline-item one" style="left: 115px;">
+                                <div class="timeline-item-content" style="top: 107.453px; left: -25px; width: 300px; height: 75.5469px;">
                                     <div class="timeline-item-icon-content">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-magnifying-glass"></i>
@@ -254,11 +262,11 @@
                                     <polyline id="connector" points="0,258 0,138.140625" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
-                            <div class="timeline-item" style="left: 185px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 333px; left: -25px; width: 300px; height: 136.972px;">
+                            <div class="timeline-item two" style="left: 185px;">
+                                <div  class="timeline-item-content" style="top: 333px; left: -25px; width: 300px; height: 136.972px;">
                                     <div class="timeline-item-icon-content">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-hammer"></i>
@@ -277,11 +285,11 @@
                                     <polyline id="connector" points="0,258 0,313.6875" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
-                            <div class="timeline-item" style="left: 385px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 117.641px; left: -25px; width: 300px; height: 115.359px;">
+                            <div class="timeline-item three" style="left: 385px;">
+                                <div  class="timeline-item-content" style="top: 117.641px; left: -25px; width: 300px; height: 115.359px;">
                                     <div class="timeline-item-icon-content">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-alien" style="    --fa-primary-opacity: 0;"></i>
@@ -300,11 +308,11 @@
                                     <polyline id="connector" points="0,258 0,148.328125" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
-                            <div class="timeline-item" style="left: 450px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 333px; left: -25px; width: 300px; height: 75.5469px;">
+                            <div class="timeline-item four" style="left: 450px;">
+                                <div  class="timeline-item-content" style="top: 333px; left: -25px; width: 300px; height: 75.5469px;">
                                     <div class="timeline-item-icon-content">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-comments"></i>
@@ -323,11 +331,11 @@
                                     <polyline id="connector" points="0,258 0,313.6875" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
-                            <div class="timeline-item" style="left: 692px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 133px; left: -25px; width: 300px; height: 50px;">
+                            <div class="timeline-item five" style="left: 692px;">
+                                <div  class="timeline-item-content" style="top: 133px; left: -25px; width: 300px; height: 50px;">
                                     <div class="timeline-item-icon-content" style="top:0px;">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-box-taped"></i>
@@ -335,7 +343,7 @@
                                     </div>
                                     <div class="timeline-item-text-container lower-height">
                                         <h3 class="timeline-item-title text header light small one">
-                                            First Background Sold
+                                            First Backpack Sold
                                         </h3>
                                     </div>
                                 </div>
@@ -343,11 +351,11 @@
                                     <polyline id="connector" points="0,258 0,183" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
-                            <div class="timeline-item" style="left: 724px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 283px; left: -25px; width: 300px; height: 50px;">
+                            <div class="timeline-item six" style="left: 724px;">
+                                <div  class="timeline-item-content" style="top: 283px; left: -25px; width: 300px; height: 50px;">
                                     <div class="timeline-item-icon-content" style="top:0px;">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-planet-moon"></i>
@@ -363,11 +371,11 @@
                                     <polyline id="connector" points="0,258 0,283" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
-                            <div class="timeline-item" style="left: 858px;">
-                                <div id="infoBlock" class="TimelineItemInfoBlock" style="position: absolute; top: 177.359px; left: -25px; width: 300px; height: 55.6406px;">
+                            <div class="timeline-item seven" style="left: 858px;">
+                                <div  class="timeline-item-content" style="top: 177.359px; left: -25px; width: 300px; height: 55.6406px;">
                                     <div class="timeline-item-icon-content" style="top:0px;">
                                         <div class="timeline-item-icon-container">
                                             <i class="timeline-item-icon fa-duotone fa-chart-line-up"></i>
@@ -386,13 +394,13 @@
                                     <polyline id="connector" points="0,258 0,227.359375" style="fill: none; stroke: rgba(255, 255, 255, 0.8); stroke-width: 2; stroke-opacity: 0.35; stroke-dasharray: 0;"></polyline>
                                 </svg>
                                 <svg class="timeline-item-circle">
-                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(93, 166, 181); stroke-width: 2; stroke-opacity: 1;"></circle>
+                                    <circle id="marker" r="5" cx="0" cy="258" style="fill: rgb(0, 0, 0); fill-opacity: 1; stroke: var(--colors-primary); stroke-width: 2; stroke-opacity: 1;"></circle>
                                 </svg>
                             </div>
                             <div class="timeline-marker timeline-marker-end">
                                 <svg class="timeline-marker-line">
                                     <g>
-                                        <rect x="0" y="30" width="2" height="40" fill="rgb(93, 166, 181)"></rect>
+                                        <rect x="0" y="30" width="2" height="40" fill="var(--colors-primary)"></rect>
                                     </g>
                                 </svg>
                                 <h4 class="timeline-marker-text text light one">More...</h4>
@@ -406,9 +414,9 @@
                 <div class="section-content">
                     <div class="section-header width-fit-content" style="margin-bottom: 32px;">
                         <div class="section-header-content justify-content-start width-fit-content">
-                            <h2 class="text light header" style="width:570px;">Employee satisfaction rates compared<sup> 1</sup></h2>
+                            <h2 class="text light header">Employee satisfaction rates compared<sup> 1</sup></h2>
                             <svg viewbox="0 0 40 4" style="width:40px;height:4px;">
-                                <rect x="0" y="0" fill="rgb(93, 166, 181)" width="40" height="4"></rect>
+                                <rect x="0" y="0" fill="var(--colors-primary)" width="40" height="4"></rect>
                             </svg>
                         </div>
                     </div>
@@ -420,8 +428,8 @@
                                         <h5 class="text light large thin monospace">23%</h5>
                                     </div>
                                     <div class="compare-vertical-graph-icons">
-                                        <svg style="width: 100%; height: 100%;">
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                        <svg style="width: 100%; height: 100%;" viewBox="0 0 315 448">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(11px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -430,7 +438,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(27px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -439,7 +447,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(99px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -448,7 +456,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(79px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -457,7 +465,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(25px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -466,7 +474,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(94px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -475,7 +483,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(73.612px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(73.612px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(27px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -484,7 +492,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(73.612px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(73.612px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(29px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -493,7 +501,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(147.224px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(147.224px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(69px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -502,7 +510,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(147.224px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(147.224px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(76px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -511,7 +519,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(147.224px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(147.224px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(73px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -520,7 +528,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(147.224px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(147.224px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(24px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -529,7 +537,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(220.836px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(220.836px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(27px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -538,7 +546,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(220.836px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(220.836px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(3px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -547,7 +555,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(220.836px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(220.836px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(37px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -556,7 +564,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(220.836px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(220.836px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(61px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -565,7 +573,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(95px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -574,7 +582,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(99px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -583,7 +591,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(26px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -592,7 +600,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(94px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -601,7 +609,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(65px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -610,7 +618,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(21px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -619,7 +627,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(57px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -628,7 +636,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(72px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -650,8 +658,8 @@
                                         <h5 class="text light large thin monospace">57%</h5>
                                     </div>
                                     <div class="compare-vertical-graph-icons">
-                                        <svg style="width: 100%; height: 100%;">
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                        <svg style="width: 100%; height: 100%;" viewBox="0 0 315 448">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(22px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -660,7 +668,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(96px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -669,7 +677,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(20px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -678,7 +686,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(20px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -687,7 +695,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(89px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -696,7 +704,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(90px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -705,7 +713,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(0px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -714,7 +722,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(56px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -723,7 +731,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(93px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -732,7 +740,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(26px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -741,7 +749,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(20px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -750,7 +758,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(59px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -759,7 +767,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(220.836px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(220.836px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(26px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -768,7 +776,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(220.836px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(220.836px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(37px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -777,7 +785,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(220.836px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(220.836px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(11px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -786,7 +794,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(220.836px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(220.836px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(44px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -795,7 +803,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(96px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -804,7 +812,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(38px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -813,7 +821,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(93px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -822,7 +830,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(294.448px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(294.448px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(30px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -831,7 +839,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(1px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -840,7 +848,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(61px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -849,7 +857,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(19px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -858,7 +866,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(81px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -880,8 +888,8 @@
                                         <h5 class="text light large thin monospace">93%</h5>
                                     </div>
                                     <div class="compare-vertical-graph-icons">
-                                        <svg style="width: 100%; height: 100%;">
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                        <svg style="width: 100%; height: 100%;" viewBox="0 0 315 448">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(26px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -890,7 +898,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(24px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -899,7 +907,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(93px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -908,7 +916,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(0px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(0px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(28px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -917,7 +925,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(19px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -926,7 +934,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(58px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -935,7 +943,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(37px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -944,7 +952,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(73.612px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(73.612px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(87px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -953,7 +961,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(85px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -962,7 +970,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(58px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -971,7 +979,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(88px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -980,7 +988,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(147.224px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(147.224px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(70px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -989,7 +997,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(220.836px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(220.836px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(51px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -998,7 +1006,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(220.836px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(220.836px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(89px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1007,7 +1015,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(220.836px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(220.836px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(96px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1016,7 +1024,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(220.836px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(220.836px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(57px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1025,7 +1033,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(294.448px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(294.448px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(31px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1034,7 +1042,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(294.448px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(294.448px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(86px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1043,7 +1051,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(294.448px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(294.448px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(52px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1052,7 +1060,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(294.448px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(294.448px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(87px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1061,7 +1069,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(368.06px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(0px) translateY(368.06px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(59px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1070,7 +1078,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(368.06px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(81.6667px) translateY(368.06px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(44px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1079,7 +1087,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(368.06px); opacity: 1; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(163.333px) translateY(368.06px); opacity: 1; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(55px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1088,7 +1096,7 @@
                                                     </g>
                                                 </svg>
                                             </g>
-                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(368.06px); opacity: 0.2; fill: rgb(93, 166, 181); fill-opacity: 1;">
+                                            <g width="73.61197916666669" height="73.61197916666669" style="transform: translateX(245px) translateY(368.06px); opacity: 0.2; fill: var(--colors-primary); fill-opacity: 1;">
                                                 <svg width="73.61197916666669" height="73.61197916666669" style="position: absolute; transition: none 0s ease 0s;">
                                                     <g style="transform: translateZ(33px) scale(0.7); transform-origin: center center; transition: none 0s ease 0s;">
                                                         <svg width="100%" height="100%" viewBox="28.00029945373535 27.999799728393555 72 72">
@@ -1113,87 +1121,80 @@
                 <div class="section-content">
                     <div class="section-header width-fit-content" style="margin-bottom: 32px;">
                         <div class="section-header-content justify-content-start width-fit-content">
-                            <h2 class="text light header" style="width:570px;">Our Roadmap</h2>
+                            <h2 class="text light header">Our Roadmap</h2>
                             <svg viewbox="0 0 40 4" style="width:40px;height:4px;">
-                                <rect x="0" y="0" fill="rgb(93, 166, 181)" width="40" height="4"></rect>
+                                <rect x="0" y="0" fill="var(--colors-primary)" width="40" height="4"></rect>
                             </svg>
                         </div>
                     </div>
-
                     <div class="section-body width-fit-content">
+                        <div class="roadmap">
+                            <div class="roadmap-road">
+                                <svg width="1280" height="410" viewBox="0 0 1280 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M490 67C418.062 67 358.444 122.776 353.659 194.555L352.306 214.843C346.598 300.466 275.481 367 189.667 367H167L177 354L167 341H189.667C261.793 341 321.566 285.079 326.364 213.113L327.716 192.825C333.412 107.389 404.374 41 490 41C575.626 41 646.588 107.389 652.284 192.825L653.659 213.445C658.444 285.224 718.062 341 790 341C861.938 341 921.556 285.224 926.341 213.445L927.694 193.157C933.402 107.534 1004.52 41 1090.33 41H1280V67H1090.33C1018.21 67 958.434 122.921 953.636 194.887L952.284 215.175C946.588 300.611 875.626 367 790 367C704.374 367 633.412 300.611 627.716 215.175L626.341 194.555C621.556 122.776 561.938 67 490 67Z" fill="var(--colors-grey-600)" style="filter: drop-shadow( 0 0 12px rgba(var(--colors-dark-rgb), .5));"></path>
+                                    <path d="M178 354H189.667C268.637 354 334.082 292.773 339.335 213.978L340.687 193.69C345.928 115.082 411.218 54 490 54V54C568.782 54 634.072 115.082 639.313 193.69L640.687 214.31C645.928 292.918 711.218 354 790 354V354C868.782 354 934.072 292.918 939.313 214.31L940.665 194.022C945.918 115.227 1011.36 54 1090.33 54H1280" stroke="var(--colors-light)" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="8 16" stroke-dashoffset="0">
+                                        <animate attributeName="stroke-dashoffset" values="0;24" dur="12s" repeatCount="indefinite" />
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="roadmap-item-container" style="top: 223px; left: 326px;">
+                                <div class="roadmap-item">
+                                    <div class="roadmap-item-text-container">
+                                        <div class="roadmap-item-text-title">
+                                            <h4 class="text large uppercase light">Backpack V2 Released</h4>
+                                        </div>
+                                        <div class="roadmap-item-text-body">
+                                            <p class="text light thin">with advanced protection shields and more functionality</p>
+                                        </div>
+                                    </div>
 
+                                    <div class="roadmap-icon-marker">
+                                        <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 16px;">
+                                                <path d="M29.25 15.3118C29.25 25.5 15 40.875 15 40.875C15 40.875 0.75 25.5 0.75 15.3118C0.75 7.26954 7.12994 0.75 15 0.75C22.8701 0.75 29.25 7.26954 29.25 15.3118Z" fill="var(--colors-primary)"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8967 40.7662L15 39.75L16.1033 40.7662L15 41.9641L13.8967 40.7662ZM15.9996 38.6198C15.3748 39.343 15 39.75 15 39.75C15 39.75 14.6251 39.343 14.0004 38.6198C10.8757 35.0027 1.5 23.4751 1.5 15.3813C1.5 7.71489 7.54416 1.5 15 1.5C22.4558 1.5 28.5 7.71489 28.5 15.3813C28.5 23.4751 19.1243 35.0027 15.9996 38.6198ZM16.1033 40.7662C16.103 40.7665 16.1033 40.7662 15 39.75C13.8967 40.7662 13.897 40.7665 13.8967 40.7662L13.8954 40.7649L13.8929 40.7621L13.8843 40.7527L13.8526 40.718C13.8252 40.688 13.7855 40.6442 13.7341 40.5872C13.6314 40.4732 13.4823 40.3065 13.2936 40.0919C12.9161 39.6626 12.3792 39.0411 11.7361 38.2658C10.4513 36.7168 8.73542 34.5457 7.01645 32.0612C5.30059 29.5811 3.56207 26.7607 2.24764 23.9153C0.943311 21.0917 0 18.124 0 15.3813C0 6.92612 6.67662 0 15 0C23.3234 0 30 6.92612 30 15.3813C30 18.124 29.0567 21.0917 27.7524 23.9153C26.4379 26.7607 24.6994 29.5811 22.9835 32.0612C21.2646 34.5457 19.5487 36.7168 18.2639 38.2658C17.6208 39.0411 17.0839 39.6626 16.7064 40.0919C16.5177 40.3065 16.3686 40.4732 16.2659 40.5872C16.2145 40.6442 16.1748 40.688 16.1474 40.718L16.1157 40.7527L16.1071 40.7621L16.1046 40.7649L16.1033 40.7662Z" fill="var(--colors-dark)"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roadmap-item-container" style="top: 166px; left: 605px;">
+                                <div class="roadmap-item">
+                                    <div class="roadmap-item-text-container">
+                                        <div class="roadmap-item-text-title">
+                                            <h4 class="text large uppercase light">Space Probes Launch</h4>
+                                        </div>
+                                        <div class="roadmap-item-text-body">
+                                            <p class="text light thin">more in-depth research into the asteroids</p>
+                                        </div>
+                                    </div>
 
-<div class="roadmap">
-    <div class="roadmap-road">
-        <svg width="1280" height="410" viewBox="0 0 1280 410" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M490 67C418.062 67 358.444 122.776 353.659 194.555L352.306 214.843C346.598 300.466 275.481 367 189.667 367H167L177 354L167 341H189.667C261.793 341 321.566 285.079 326.364 213.113L327.716 192.825C333.412 107.389 404.374 41 490 41C575.626 41 646.588 107.389 652.284 192.825L653.659 213.445C658.444 285.224 718.062 341 790 341C861.938 341 921.556 285.224 926.341 213.445L927.694 193.157C933.402 107.534 1004.52 41 1090.33 41H1280V67H1090.33C1018.21 67 958.434 122.921 953.636 194.887L952.284 215.175C946.588 300.611 875.626 367 790 367C704.374 367 633.412 300.611 627.716 215.175L626.341 194.555C621.556 122.776 561.938 67 490 67Z" fill="var(--colors-grey-600)" style="filter: drop-shadow( 0 0 12px rgba(var(--colors-dark-rgb), .5));"></path>
-            <path d="M178 354H189.667C268.637 354 334.082 292.773 339.335 213.978L340.687 193.69C345.928 115.082 411.218 54 490 54V54C568.782 54 634.072 115.082 639.313 193.69L640.687 214.31C645.928 292.918 711.218 354 790 354V354C868.782 354 934.072 292.918 939.313 214.31L940.665 194.022C945.918 115.227 1011.36 54 1090.33 54H1280" stroke="var(--colors-light)" stroke-opacity="0.8" stroke-width="2" stroke-dasharray="8 16"></path>
-        </svg>
-    </div>
+                                    <div class="roadmap-icon-marker">
+                                        <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 27px;">
+                                                <path d="M29.25 15.3118C29.25 25.5 15 40.875 15 40.875C15 40.875 0.75 25.5 0.75 15.3118C0.75 7.26954 7.12994 0.75 15 0.75C22.8701 0.75 29.25 7.26954 29.25 15.3118Z" fill="var(--colors-primary)"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8967 40.7662L15 39.75L16.1033 40.7662L15 41.9641L13.8967 40.7662ZM15.9996 38.6198C15.3748 39.343 15 39.75 15 39.75C15 39.75 14.6251 39.343 14.0004 38.6198C10.8757 35.0027 1.5 23.4751 1.5 15.3813C1.5 7.71489 7.54416 1.5 15 1.5C22.4558 1.5 28.5 7.71489 28.5 15.3813C28.5 23.4751 19.1243 35.0027 15.9996 38.6198ZM16.1033 40.7662C16.103 40.7665 16.1033 40.7662 15 39.75C13.8967 40.7662 13.897 40.7665 13.8967 40.7662L13.8954 40.7649L13.8929 40.7621L13.8843 40.7527L13.8526 40.718C13.8252 40.688 13.7855 40.6442 13.7341 40.5872C13.6314 40.4732 13.4823 40.3065 13.2936 40.0919C12.9161 39.6626 12.3792 39.0411 11.7361 38.2658C10.4513 36.7168 8.73542 34.5457 7.01645 32.0612C5.30059 29.5811 3.56207 26.7607 2.24764 23.9153C0.943311 21.0917 0 18.124 0 15.3813C0 6.92612 6.67662 0 15 0C23.3234 0 30 6.92612 30 15.3813C30 18.124 29.0567 21.0917 27.7524 23.9153C26.4379 26.7607 24.6994 29.5811 22.9835 32.0612C21.2646 34.5457 19.5487 36.7168 18.2639 38.2658C17.6208 39.0411 17.0839 39.6626 16.7064 40.0919C16.5177 40.3065 16.3686 40.4732 16.2659 40.5872C16.2145 40.6442 16.1748 40.688 16.1474 40.718L16.1157 40.7527L16.1071 40.7621L16.1046 40.7649L16.1033 40.7662Z" fill="var(--colors-dark)"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roadmap-item-container" style="top: 321px; left: 904px; width: 221px;">
+                                <div class="roadmap-item">
+                                    <div class="roadmap-item-text-container">
+                                        <div class="roadmap-item-text-title">
+                                            <h4 class="text large uppercase light">More Defensive Products</h4>
+                                        </div>
+                                        <div class="roadmap-item-text-body">
+                                            <p class="text light thin">release more products to save more lives</p>
+                                        </div>
+                                    </div>
 
-    <div class="roadmap-item-container" style="top: 223px; left: 326px;">
-        <div class="roadmap-item">
-            <div class="roadmap-item-text-container">
-                <div class="roadmap-item-text-title">
-                    <h4 class="text large uppercase light">Backpack V2 Released</h4>
-                </div>
-                <div class="roadmap-item-text-body">
-                    <p class="text light thin">with advanced protection shields and more functionality</p>
-                </div>
-            </div>
-
-            <div class="roadmap-icon-marker">
-                <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 16px;">
-                        <path d="M29.25 15.3118C29.25 25.5 15 40.875 15 40.875C15 40.875 0.75 25.5 0.75 15.3118C0.75 7.26954 7.12994 0.75 15 0.75C22.8701 0.75 29.25 7.26954 29.25 15.3118Z" fill="rgb(93, 166, 181)"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8967 40.7662L15 39.75L16.1033 40.7662L15 41.9641L13.8967 40.7662ZM15.9996 38.6198C15.3748 39.343 15 39.75 15 39.75C15 39.75 14.6251 39.343 14.0004 38.6198C10.8757 35.0027 1.5 23.4751 1.5 15.3813C1.5 7.71489 7.54416 1.5 15 1.5C22.4558 1.5 28.5 7.71489 28.5 15.3813C28.5 23.4751 19.1243 35.0027 15.9996 38.6198ZM16.1033 40.7662C16.103 40.7665 16.1033 40.7662 15 39.75C13.8967 40.7662 13.897 40.7665 13.8967 40.7662L13.8954 40.7649L13.8929 40.7621L13.8843 40.7527L13.8526 40.718C13.8252 40.688 13.7855 40.6442 13.7341 40.5872C13.6314 40.4732 13.4823 40.3065 13.2936 40.0919C12.9161 39.6626 12.3792 39.0411 11.7361 38.2658C10.4513 36.7168 8.73542 34.5457 7.01645 32.0612C5.30059 29.5811 3.56207 26.7607 2.24764 23.9153C0.943311 21.0917 0 18.124 0 15.3813C0 6.92612 6.67662 0 15 0C23.3234 0 30 6.92612 30 15.3813C30 18.124 29.0567 21.0917 27.7524 23.9153C26.4379 26.7607 24.6994 29.5811 22.9835 32.0612C21.2646 34.5457 19.5487 36.7168 18.2639 38.2658C17.6208 39.0411 17.0839 39.6626 16.7064 40.0919C16.5177 40.3065 16.3686 40.4732 16.2659 40.5872C16.2145 40.6442 16.1748 40.688 16.1474 40.718L16.1157 40.7527L16.1071 40.7621L16.1046 40.7649L16.1033 40.7662Z" fill="var(--colors-dark)"></path>
-                </svg>
-            </div>
-        </div>
-    </div>
-
-    <div class="roadmap-item-container" style="top: 166px; left: 605px;">
-        <div class="roadmap-item">
-            <div class="roadmap-item-text-container">
-                <div class="roadmap-item-text-title">
-                    <h4 class="text large uppercase light">Space Probes Launch</h4>
-                </div>
-                <div class="roadmap-item-text-body">
-                    <p class="text light thin">more in-depth research into the asteroids</p>
-                </div>
-            </div>
-
-            <div class="roadmap-icon-marker">
-                <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 27px;">
-                        <path d="M29.25 15.3118C29.25 25.5 15 40.875 15 40.875C15 40.875 0.75 25.5 0.75 15.3118C0.75 7.26954 7.12994 0.75 15 0.75C22.8701 0.75 29.25 7.26954 29.25 15.3118Z" fill="rgb(93, 166, 181)"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8967 40.7662L15 39.75L16.1033 40.7662L15 41.9641L13.8967 40.7662ZM15.9996 38.6198C15.3748 39.343 15 39.75 15 39.75C15 39.75 14.6251 39.343 14.0004 38.6198C10.8757 35.0027 1.5 23.4751 1.5 15.3813C1.5 7.71489 7.54416 1.5 15 1.5C22.4558 1.5 28.5 7.71489 28.5 15.3813C28.5 23.4751 19.1243 35.0027 15.9996 38.6198ZM16.1033 40.7662C16.103 40.7665 16.1033 40.7662 15 39.75C13.8967 40.7662 13.897 40.7665 13.8967 40.7662L13.8954 40.7649L13.8929 40.7621L13.8843 40.7527L13.8526 40.718C13.8252 40.688 13.7855 40.6442 13.7341 40.5872C13.6314 40.4732 13.4823 40.3065 13.2936 40.0919C12.9161 39.6626 12.3792 39.0411 11.7361 38.2658C10.4513 36.7168 8.73542 34.5457 7.01645 32.0612C5.30059 29.5811 3.56207 26.7607 2.24764 23.9153C0.943311 21.0917 0 18.124 0 15.3813C0 6.92612 6.67662 0 15 0C23.3234 0 30 6.92612 30 15.3813C30 18.124 29.0567 21.0917 27.7524 23.9153C26.4379 26.7607 24.6994 29.5811 22.9835 32.0612C21.2646 34.5457 19.5487 36.7168 18.2639 38.2658C17.6208 39.0411 17.0839 39.6626 16.7064 40.0919C16.5177 40.3065 16.3686 40.4732 16.2659 40.5872C16.2145 40.6442 16.1748 40.688 16.1474 40.718L16.1157 40.7527L16.1071 40.7621L16.1046 40.7649L16.1033 40.7662Z" fill="var(--colors-dark)"></path>
-                </svg>
-            </div>
-        </div>
-    </div>
-
-    <div class="roadmap-item-container" style="top: 321px; left: 904px; width: 221px;">
-        <div class="roadmap-item">
-            <div class="roadmap-item-text-container">
-                <div class="roadmap-item-text-title">
-                    <h4 class="text large uppercase light">More Defensive Products</h4>
-                </div>
-                <div class="roadmap-item-text-body">
-                    <p class="text light thin">release more products to save more lives</p>
-                </div>
-            </div>
-
-            <div class="roadmap-icon-marker">
-                <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 16px;">
-                        <path d="M29.25 15.3118C29.25 25.5 15 40.875 15 40.875C15 40.875 0.75 25.5 0.75 15.3118C0.75 7.26954 7.12994 0.75 15 0.75C22.8701 0.75 29.25 7.26954 29.25 15.3118Z" fill="rgb(93, 166, 181)"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8967 40.7662L15 39.75L16.1033 40.7662L15 41.9641L13.8967 40.7662ZM15.9996 38.6198C15.3748 39.343 15 39.75 15 39.75C15 39.75 14.6251 39.343 14.0004 38.6198C10.8757 35.0027 1.5 23.4751 1.5 15.3813C1.5 7.71489 7.54416 1.5 15 1.5C22.4558 1.5 28.5 7.71489 28.5 15.3813C28.5 23.4751 19.1243 35.0027 15.9996 38.6198ZM16.1033 40.7662C16.103 40.7665 16.1033 40.7662 15 39.75C13.8967 40.7662 13.897 40.7665 13.8967 40.7662L13.8954 40.7649L13.8929 40.7621L13.8843 40.7527L13.8526 40.718C13.8252 40.688 13.7855 40.6442 13.7341 40.5872C13.6314 40.4732 13.4823 40.3065 13.2936 40.0919C12.9161 39.6626 12.3792 39.0411 11.7361 38.2658C10.4513 36.7168 8.73542 34.5457 7.01645 32.0612C5.30059 29.5811 3.56207 26.7607 2.24764 23.9153C0.943311 21.0917 0 18.124 0 15.3813C0 6.92612 6.67662 0 15 0C23.3234 0 30 6.92612 30 15.3813C30 18.124 29.0567 21.0917 27.7524 23.9153C26.4379 26.7607 24.6994 29.5811 22.9835 32.0612C21.2646 34.5457 19.5487 36.7168 18.2639 38.2658C17.6208 39.0411 17.0839 39.6626 16.7064 40.0919C16.5177 40.3065 16.3686 40.4732 16.2659 40.5872C16.2145 40.6442 16.1748 40.688 16.1474 40.718L16.1157 40.7527L16.1071 40.7621L16.1046 40.7649L16.1033 40.7662Z" fill="var(--colors-dark)"></path>
-                </svg>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
+                                    <div class="roadmap-icon-marker">
+                                        <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 16px;">
+                                                <path d="M29.25 15.3118C29.25 25.5 15 40.875 15 40.875C15 40.875 0.75 25.5 0.75 15.3118C0.75 7.26954 7.12994 0.75 15 0.75C22.8701 0.75 29.25 7.26954 29.25 15.3118Z" fill="var(--colors-primary)"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8967 40.7662L15 39.75L16.1033 40.7662L15 41.9641L13.8967 40.7662ZM15.9996 38.6198C15.3748 39.343 15 39.75 15 39.75C15 39.75 14.6251 39.343 14.0004 38.6198C10.8757 35.0027 1.5 23.4751 1.5 15.3813C1.5 7.71489 7.54416 1.5 15 1.5C22.4558 1.5 28.5 7.71489 28.5 15.3813C28.5 23.4751 19.1243 35.0027 15.9996 38.6198ZM16.1033 40.7662C16.103 40.7665 16.1033 40.7662 15 39.75C13.8967 40.7662 13.897 40.7665 13.8967 40.7662L13.8954 40.7649L13.8929 40.7621L13.8843 40.7527L13.8526 40.718C13.8252 40.688 13.7855 40.6442 13.7341 40.5872C13.6314 40.4732 13.4823 40.3065 13.2936 40.0919C12.9161 39.6626 12.3792 39.0411 11.7361 38.2658C10.4513 36.7168 8.73542 34.5457 7.01645 32.0612C5.30059 29.5811 3.56207 26.7607 2.24764 23.9153C0.943311 21.0917 0 18.124 0 15.3813C0 6.92612 6.67662 0 15 0C23.3234 0 30 6.92612 30 15.3813C30 18.124 29.0567 21.0917 27.7524 23.9153C26.4379 26.7607 24.6994 29.5811 22.9835 32.0612C21.2646 34.5457 19.5487 36.7168 18.2639 38.2658C17.6208 39.0411 17.0839 39.6626 16.7064 40.0919C16.5177 40.3065 16.3686 40.4732 16.2659 40.5872C16.2145 40.6442 16.1748 40.688 16.1474 40.718L16.1157 40.7527L16.1071 40.7621L16.1046 40.7649L16.1033 40.7662Z" fill="var(--colors-dark)"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1202,7 +1203,7 @@
             </section>
 
             <section id="/stats" class="section section-headline-stats seven">
-                <div class="section-content dynamic-width">
+                <div class="section-content dynamic-width width-fit-content">
                     <div class="section-header justify-content-center width-fit-content">
                         <h2 class="text light header jumbo one">Some statistics</h2>
                     </div>
@@ -1234,7 +1235,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="height:100%;width:0;margin-left:128px;"></div>
+                        <div style="height:100%;width:0;margin-left:128px;margin-top:64px;"></div>
                         <div class="graph-container">
                             <div class="graph-title">
                                 <h3 class="text light header small">
@@ -1280,20 +1281,20 @@
                                     </g>
                                     <g class="graph-plots">
                                         <g onmouseover="graphHoverIn('one')" onmouseout="graphHoverOut('one')" class="graph-plot graph-plot-spline one" transform="translate(100,82)" clip-path="url(#graph-clippath)">
-                                            <path fill="none" d="M 1.0783410138249 414 C 1.0783410138249 414 65.77880184331596 392.8399999999991 108.91244239631 354.2 C 152.046082949306 315.5599999999991 173.612903225804 258.52000000000004 216.7465437788 220.8 C 259.880184331796 183.08000000000004 281.447004608294 191.36000000000004 324.58064516129 165.60000000000002 C 367.714285714286 139.84000000000006 389.281105990784 112.24 432.41474654378 92 C 475.54838709677597 71.75999999999999 497.1152073732739 82.80000000000004 540.24884792627 64.40000000000003 C 583.3824884792659 46.00000000000006 648.08294930876 5.684341886080802e-14 648.08294930876 5.684341886080802e-14" class="graph-line" stroke="rgb(20, 94, 128)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"></path>
+                                            <path fill="none" d="M 1.0783410138249 414 C 1.0783410138249 414 65.77880184331596 392.8399999999991 108.91244239631 354.2 C 152.046082949306 315.5599999999991 173.612903225804 258.52000000000004 216.7465437788 220.8 C 259.880184331796 183.08000000000004 281.447004608294 191.36000000000004 324.58064516129 165.60000000000002 C 367.714285714286 139.84000000000006 389.281105990784 112.24 432.41474654378 92 C 475.54838709677597 71.75999999999999 497.1152073732739 82.80000000000004 540.24884792627 64.40000000000003 C 583.3824884792659 46.00000000000006 648.08294930876 5.684341886080802e-14 648.08294930876 5.684341886080802e-14" class="graph-line" stroke="var(--colors-secondary)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"></path>
                                         </g>
                                         <g onmouseover="graphHoverIn('two')" onmouseout="graphHoverOut('two')" class="graph-plot graph-plot-spline two" transform="translate(100,82)" clip-path="url(#graph-clippath)">
-                                            <path fill="none" d="M 1.0783410138249 28.75 C 1.0783410138249 28.75 65.77880184331596 31.6250000000001 108.91244239631 35.9375 C 152.046082949306 40.2500000000001 173.612903225804 35.9375 216.7465437788 50.3125 C 259.880184331796 64.6875 281.447004608294 116.43749999999997 324.58064516129 143.75 C 367.714285714286 171.06249999999997 389.281105990784 172.5 432.41474654378 186.875 C 475.54838709677597 201.25 497.1152073732739 207 540.24884792627 215.625 C 583.3824884792659 224.25 648.08294930876 230 648.08294930876 230" class="graph-line" stroke="rgb(93, 166, 181)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"></path>
+                                            <path fill="none" d="M 1.0783410138249 28.75 C 1.0783410138249 28.75 65.77880184331596 31.6250000000001 108.91244239631 35.9375 C 152.046082949306 40.2500000000001 173.612903225804 35.9375 216.7465437788 50.3125 C 259.880184331796 64.6875 281.447004608294 116.43749999999997 324.58064516129 143.75 C 367.714285714286 171.06249999999997 389.281105990784 172.5 432.41474654378 186.875 C 475.54838709677597 201.25 497.1152073732739 207 540.24884792627 215.625 C 583.3824884792659 224.25 648.08294930876 230 648.08294930876 230" class="graph-line" stroke="var(--colors-primary)" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"></path>
                                         </g>
                                     </g>
                                     <g class="graph-legend" transform="translate(228,20)">
                                         <g onmouseover="graphHoverIn('one')" onmouseout="graphHoverOut('one')" class="graph-legend-item one" transform="translate(8,0)">
                                             <text x="30" y="16" text-anchor="start" class="graph-legend-text text light">Punto Subscribers</text>
-                                            <rect x="0" y="0" width="20" height="20" fill="rgb(20, 94, 128)" rx="10" ry="10" class="graph-legend-circle"></rect>
+                                            <rect x="0" y="0" width="20" height="20" fill="var(--colors-secondary)" rx="10" ry="10" class="graph-legend-circle"></rect>
                                         </g>
                                         <g onmouseover="graphHoverIn('two')" onmouseout="graphHoverOut('two')" class="graph-legend-item two" transform="translate(239.82029724121094,0)">
                                             <text x="30" y="16" text-anchor="start" class="graph-legend-text text light">Asteroid Deaths</text>
-                                            <rect x="0" y="0" width="20" height="20" fill="rgb(93, 166, 181)" rx="10" ry="10" class="graph-legend-circle"></rect>
+                                            <rect x="0" y="0" width="20" height="20" fill="var(--colors-primary)" rx="10" ry="10" class="graph-legend-circle"></rect>
                                         </g>
                                     </g>
                                     <g class="graph-axis-labels graph-x-axis-labels">
@@ -1331,9 +1332,9 @@
                 <div class="section-content dynamic-width">
                     <div class="section-header width-fit-content" style="margin-bottom: 32px;">
                         <div class="section-header-content justify-content-start width-fit-content">
-                            <h2 class="text light header" style="width:570px;">Asteroid survival rates compared<sup> 3</sup></h2>
+                            <h2 class="text light header">Asteroid survival rates compared<sup> 3</sup></h2>
                             <svg viewbox="0 0 40 4" style="width:40px;height:4px;">
-                                <rect x="0" y="0" fill="rgb(93, 166, 181)" width="40" height="4"></rect>
+                                <rect x="0" y="0" fill="var(--colors-primary)" width="40" height="4"></rect>
                             </svg>
                         </div>
                     </div>
@@ -1346,7 +1347,7 @@
                                     </div>
                                     <div class="compare-horizontal-graph-icons">
                                         <svg style="width: 759px; height: 80px;" viewbox="0 0 759 80">
-                                            <g class="backgroundIcons" fill="rgb(93, 166, 181)" fill-opacity="0.3" stroke-width="0" opacity="1">
+                                            <g class="backgroundIcons" fill="var(--colors-primary)" fill-opacity="0.3" stroke-width="0" opacity="1">
                                                 <g width="80.3359375" height="80.3359375" style="position: absolute; transform: translateX(0px) translateY(0px);">
                                                     <svg width="80.3359375" height="80.3359375" style="position: absolute; transition: none 0s ease 0s;">
                                                         <g style="transform-origin: center center; transition: none 0s ease 0s;">
@@ -1423,7 +1424,7 @@
                                             <clipPath id="7378-clip-path">
                                                 <rect width="752.5184597656249" height="80.3359375" style="position: absolute; transform: translateX(0px) translateY(0px);"></rect>
                                             </clipPath>
-                                            <g class="foregroundIcons" clip-path="url(#7378-clip-path" fill="rgb(93, 166, 181)" fill-opacity="1" stroke="rgb(93, 166, 181)" stroke-width="0" stroke-opacity="1">
+                                            <g class="foregroundIcons" clip-path="url(#7378-clip-path" fill="var(--colors-primary)" fill-opacity="1" stroke="var(--colors-primary)" stroke-width="0" stroke-opacity="1">
                                                 <g width="80.3359375" height="80.3359375" style="position: absolute; transform: translateX(0px) translateY(0px);">
                                                     <svg width="80.3359375" height="80.3359375" style="position: absolute; transition: none 0s ease 0s;">
                                                         <g style="transform-origin: center center; transition: none 0s ease 0s;">
@@ -1511,7 +1512,7 @@
                                     </div>
                                     <div class="compare-horizontal-graph-icons">
                                         <svg style="width: 759px; height: 80px;" viewbox="0 0 759 80">
-                                            <g class="backgroundIcons" fill="rgb(93, 166, 181)" fill-opacity="0.3" stroke-width="0" opacity="1">
+                                            <g class="backgroundIcons" fill="var(--colors-primary)" fill-opacity="0.3" stroke-width="0" opacity="1">
                                                 <g width="80.3359375" height="80.3359375" style="position: absolute; transform: translateX(0px) translateY(0px);">
                                                     <svg width="80.3359375" height="80.3359375" style="position: absolute; transition: none 0s ease 0s;">
                                                         <g style="transform-origin: center center; transition: none 0s ease 0s;">
@@ -1588,7 +1589,7 @@
                                             <clipPath id="8516-clip-path">
                                                 <rect width="50" height="80.3359375" style="position: absolute; transform: translateX(0px) translateY(0px);"></rect>
                                             </clipPath>
-                                            <g class="foregroundIcons" clip-path="url(#8516-clip-path" fill="rgb(93, 166, 181)" fill-opacity="1" stroke="rgb(93, 166, 181)" stroke-width="0" stroke-opacity="1">
+                                            <g class="foregroundIcons" clip-path="url(#8516-clip-path" fill="var(--colors-primary)" fill-opacity="1" stroke="var(--colors-primary)" stroke-width="0" stroke-opacity="1">
                                                 <g width="80.3359375" height="80.3359375" style="position: absolute; transform: translateX(0px) translateY(0px);">
                                                     <svg width="80.3359375" height="80.3359375" style="position: absolute; transition: none 0s ease 0s;">
                                                         <g style="transform-origin: center center; transition: none 0s ease 0s;">
@@ -1715,14 +1716,14 @@
                                     <g class="graph-plots">
                                         <g class="graph-plot graph-plot-areaspline" opacity=".6" transform="translate(54,20) scale(1 1)" clip-path="url(#graph-xkkc51v-463-)">
                                             <path fill="rgba(93, 166, 181, 0.66)" d="M 45.954545454545 315.8571428571429 C 45.954545454545 315.8571428571429 101.100000000002 313.56000000000023 137.86363636364 304.37142857142857 C 174.62727272727602 295.18285714285736 193.00909090909403 288.2914285714286 229.77272727273 269.9142857142857 C 266.536363636366 251.53714285714284 284.918181818184 232.0114285714286 321.68181818182 212.4857142857143 C 358.44545454545596 192.96000000000004 376.82727272727396 172.28571428571428 413.59090909091 172.28571428571428 C 450.3545454545459 172.28571428571428 468.736363636364 172.85999999999999 505.5 175.15714285714284 C 542.263636363636 177.4542857142857 560.645454545454 183.77142857142857 597.40909090909 183.77142857142857 C 634.172727272726 183.77142857142857 652.5545454545439 178.60285714285715 689.31818181818 169.4142857142857 C 726.0818181818161 160.2257142857143 744.463636363634 147.01714285714286 781.22727272727 137.82857142857142 C 817.9909090909059 128.64000000000001 836.372727272724 137.82857142857142 873.13636363636 123.47142857142859 C 909.899999999996 109.11428571428576 965.04545454545 57.428571428571445 965.04545454545 57.428571428571445 L 965.04545454545 402 C 965.04545454545 402 909.899999999996 402 873.13636363636 402 C 836.372727272724 402 817.9909090909059 402 781.22727272727 402 C 744.463636363634 402 726.0818181818161 402 689.31818181818 402 C 652.5545454545439 402 634.172727272726 402 597.40909090909 402 C 560.645454545454 402 542.263636363636 402 505.5 402 C 468.736363636364 402 450.3545454545459 402 413.59090909091 402 C 376.82727272727396 402 358.44545454545596 402 321.68181818182 402 C 284.918181818184 402 266.536363636366 402 229.77272727273 402 C 193.00909090909403 402 174.62727272727602 402 137.86363636364 402 C 101.100000000002 402 45.954545454545 402 45.954545454545 402 Z" class="graph-area" data-z-index="0"></path>
-                                            <path fill="none" d="M 45.954545454545 315.8571428571429 C 45.954545454545 315.8571428571429 101.100000000002 313.56000000000023 137.86363636364 304.37142857142857 C 174.62727272727602 295.18285714285736 193.00909090909403 288.2914285714286 229.77272727273 269.9142857142857 C 266.536363636366 251.53714285714284 284.918181818184 232.0114285714286 321.68181818182 212.4857142857143 C 358.44545454545596 192.96000000000004 376.82727272727396 172.28571428571428 413.59090909091 172.28571428571428 C 450.3545454545459 172.28571428571428 468.736363636364 172.85999999999999 505.5 175.15714285714284 C 542.263636363636 177.4542857142857 560.645454545454 183.77142857142857 597.40909090909 183.77142857142857 C 634.172727272726 183.77142857142857 652.5545454545439 178.60285714285715 689.31818181818 169.4142857142857 C 726.0818181818161 160.2257142857143 744.463636363634 147.01714285714286 781.22727272727 137.82857142857142 C 817.9909090909059 128.64000000000001 836.372727272724 137.82857142857142 873.13636363636 123.47142857142859 C 909.899999999996 109.11428571428576 965.04545454545 57.428571428571445 965.04545454545 57.428571428571445" class="graph-graph" stroke="rgb(93, 166, 181)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path>
+                                            <path fill="none" d="M 45.954545454545 315.8571428571429 C 45.954545454545 315.8571428571429 101.100000000002 313.56000000000023 137.86363636364 304.37142857142857 C 174.62727272727602 295.18285714285736 193.00909090909403 288.2914285714286 229.77272727273 269.9142857142857 C 266.536363636366 251.53714285714284 284.918181818184 232.0114285714286 321.68181818182 212.4857142857143 C 358.44545454545596 192.96000000000004 376.82727272727396 172.28571428571428 413.59090909091 172.28571428571428 C 450.3545454545459 172.28571428571428 468.736363636364 172.85999999999999 505.5 175.15714285714284 C 542.263636363636 177.4542857142857 560.645454545454 183.77142857142857 597.40909090909 183.77142857142857 C 634.172727272726 183.77142857142857 652.5545454545439 178.60285714285715 689.31818181818 169.4142857142857 C 726.0818181818161 160.2257142857143 744.463636363634 147.01714285714286 781.22727272727 137.82857142857142 C 817.9909090909059 128.64000000000001 836.372727272724 137.82857142857142 873.13636363636 123.47142857142859 C 909.899999999996 109.11428571428576 965.04545454545 57.428571428571445 965.04545454545 57.428571428571445" class="graph-graph" stroke="var(--colors-primary)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"></path>
                                         </g>
                                     </g>
 
                                     <g class="graph-legend" transform="translate(1065,20)">
                                         <g class="graph-legend-item" style="opacity:1" transform="translate(8,28.15715266636441)">
                                             <text x="25" y="36" text-anchor="start" class="graph-legend-text text light">Price</text>
-                                            <rect x="0" y="21" width="15" height="15" fill="rgb(93, 166, 181)" rx="7.5" ry="7.5" class="graph-legend-circle"></rect>
+                                            <rect x="0" y="21" width="15" height="15" fill="var(--colors-primary)" rx="7.5" ry="7.5" class="graph-legend-circle"></rect>
                                         </g>
                                     </g>
 
