@@ -174,7 +174,7 @@ body {
 }
 
 .sections-backpacks .sticky-wrap {
-    height: 1754px;
+    height: 2000px;
 }
 
 .section.two {
@@ -235,7 +235,7 @@ body {
 .performance-swipe-section-after {
     will-change: clip-path;
     position: relative;
-    background-color: #6a0a69;
+    background-color: #040015;
     background-image: url(../img/spaceBackground/purple/3.png);
     background-blend-mode: hard-light;
     background-size: cover;
@@ -309,9 +309,7 @@ body {
 }
 
 .bento-box-content {
-    align-items: flex-start;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -330,7 +328,8 @@ body {
 }
 
 .section.three .bento-box.one {
-    background: linear-gradient(to right top, #311d65 0%, #3f1a7b 50%, #1c91cd 100%);
+    background-color: #353d93;
+    background-image: linear-gradient(to right top, #311d65 0%, #3f1a7b 50%, #1c91cd 100%);
 }
 
 .section.three .bento-box.two,
@@ -342,19 +341,39 @@ body {
 }
 
 .section.three .bento-box.two {
-    background: url(../img/store_backpackbento_circuitboard.jpg);
+    background-color: #181a17;
+    background-image: url(../img/store_backpackbento_circuitboard.jpg);
 }
 
 .section.three .bento-box.three {
-    background: url(../img/mesh_grad/mesh2/mesh2_t.png);
+    background-color: #6e69dd;
+    background-image: linear-gradient(90deg, rgba(115,24,251,1) 0%, rgba(104,101,220,1) 40%, rgba(224,191,242,1) 100%);
+    background-image: url(../img/mesh_grad/mesh2/mesh2_t.png);
 }
 
 .section.three .bento-box.four {
-    background: url(../img/mesh_grad/mesh2/mesh2_bl.png);
+    background-color: #6e69dd;
+    background-image: linear-gradient(90deg, rgba(115,24,251,1) 0%, rgba(104,101,220,1) 40%, rgba(224,191,242,1) 100%);
+    background-image: url(../img/mesh_grad/mesh2/mesh2_bl.png);
 }
 
 .section.three .bento-box.five {
-    background: url(../img/mesh_grad/mesh2/mesh2_br.png);
+    background-color: #6e69dd;
+    background-image: linear-gradient(90deg, rgba(115,24,251,1) 0%, rgba(104,101,220,1) 40%, rgba(224,191,242,1) 100%);
+    background-image: url(../img/mesh_grad/mesh2/mesh2_br.png);
+}
+
+.section.three .bento-box.six {
+    background-color: #0888f8;
+    background-image: url(../img/waves_1280x720.jpg);
+    background-position-y: center;
+    background-position-x: right;
+    background-size: cover;
+}
+
+.section.three .bento-box.seven {
+    background-color: #1a221d;
+    background-image: linear-gradient(to bottom, #203025 0%, #151516 100%);
 }
 
 .section.three .bento-box.three,
@@ -374,6 +393,12 @@ body {
 
 .section.three .bento-box.one .bento-box-content .text.one {
     line-height: 0.9em;
+}
+
+.section.three .bento-box.two .bento-box-content .text.one {
+    opacity:.8;
+    background-color: #bb239d;
+    background-image: linear-gradient(90deg,#9900ef 5%,#ff6900 95%)
 }
 
 .section.three .bento-box.three .bento-box-content .text.two {
@@ -401,7 +426,79 @@ body {
 }
 
 .section.three .bento-box.three .bento-figure.bento-image.one {
-    background-image: url(../img/bamboo_1.png);
+    background-image: url(../img/bamboo_1_320x320.png);
+    background-image: url(../img/bamboo_1_700x700.png);
     background-position-x: left;
     filter: hue-rotate(100deg) brightness(0.8);
+}
+
+.section.three .bento-box.four .bento-figure.bento-image.one {
+    background-image: url(../img/backpack/black2.png);
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 60%;
+    filter: hue-rotate(100deg) brightness(0.8);
+}
+
+.section.three .bento-box.four .bento-box-content,
+.section.three .bento-box.five .bento-box-content,
+.section.three .bento-box.six .bento-box-content,
+.section.three .bento-box.seven .bento-box-content {
+    height:100%;
+    width:100%;
+}
+
+.link.slide-link {
+    padding:0;
+}
+
+.link.slide-link::before {
+    left:0;
+}
+
+.link.slide-link:hover::before {
+    width:100%;
+}
+
+.section.three .bento-box.seven .bento-box-content .text.background-clip {
+    background-image: linear-gradient(to top, #4cd265 50%, var(--colors-light) 50%);
+    background-size: auto 200%;
+    background-position-y: 0%; 
+}
+
+.section.three .bento-box.seven .bento-box-content {
+    width: 100%;
+    align-items: center;
+}
+
+.text-badge {
+    display: inline-block;
+    position: relative;
+}
+
+.text-badge .text-badge-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 20px;
+}
+
+.text-badge .text-badge-caption {
+    font-size:20px;
+}
+
+.text-badge .text-badge-value {
+    font-size:96px;
+    font-family:var(--font-header);
+    font-weight: 700;
+}
+
+.text-badge .text-badge-subvalue {
+    font-size:64px;
+}
+
+.section.three .bento-box.six .bento-box-content {
+    justify-content: space-evenly;
+    align-items: center
 }

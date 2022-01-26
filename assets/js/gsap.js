@@ -1,70 +1,103 @@
 $(document).ready(function () {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".color-animation").forEach((item) => {
-        item.style.setProperty("--color-animation-changed",item.getAttribute("data-animate-color-startcolor"));
+    ScrollTrigger.matchMedia({
+        "(prefers-reduced-motion: no-preference)": function() {
 
-        gsap.to(item, {"--color-animation-changed":item.getAttribute("data-animate-color-endcolor"),
-            scrollTrigger: {
-                trigger:item,
-                start:item.getAttribute("data-animate-color-start"),
-                end:item.getAttribute("data-animate-color-end"),
-                ease:item.getAttribute("data-animate-color-ease"),
-                markers:false,
-                scrub:true,
-            }
-        });
+            gsap.utils.toArray(".color-animation").forEach((item) => {
+                item.style.setProperty("--color-animation-changed",item.getAttribute("data-animate-color-startcolor"));
 
-        jsE(item);
-    });
+                gsap.to(item, {"--color-animation-changed":item.getAttribute("data-animate-color-endcolor"),
+                    scrollTrigger: {
+                        trigger:item,
+                        start:item.getAttribute("data-animate-color-start"),
+                        end:item.getAttribute("data-animate-color-end"),
+                        ease:item.getAttribute("data-animate-color-ease"),
+                        markers:false,
+                        scrub:true,
+                    }
+                });
 
-    gsap.utils.toArray(".opacity-animation").forEach((item) => {
-        item.style.opacity=item.getAttribute("data-animate-opacity-startopacity");
+                jsE(item);
+            });
 
-        gsap.to(item, {css:{opacity:item.getAttribute("data-animate-opacity-endopacity")},
-            scrollTrigger: {
-                trigger:item,
-                start:item.getAttribute("data-animate-opacity-start"),
-                end:item.getAttribute("data-animate-opacity-end"),
-                ease:item.getAttribute("data-animate-opacity-ease"),
-                markers:false,
-                scrub:true,
-            }
-        });
+            gsap.utils.toArray(".opacity-animation").forEach((item) => {
+                item.style.opacity=item.getAttribute("data-animate-opacity-startopacity");
 
-        jsE(item);
-    });
+                gsap.to(item, {css:{opacity:item.getAttribute("data-animate-opacity-endopacity")},
+                    scrollTrigger: {
+                        trigger:item,
+                        start:item.getAttribute("data-animate-opacity-start"),
+                        end:item.getAttribute("data-animate-opacity-end"),
+                        ease:item.getAttribute("data-animate-opacity-ease"),
+                        markers:false,
+                        scrub:true,
+                    }
+                });
 
-    gsap.utils.toArray(".translateX-animation").forEach((item) => {
-        gsap.from(item, {css:{x:item.getAttribute("data-animate-translateX-startpos")}});
+                jsE(item);
+            });
 
-        gsap.to(item, {css:{x:item.getAttribute("data-animate-translateX-endpos")},
-            scrollTrigger: {
-                trigger:item,
-                start:item.getAttribute("data-animate-translateX-start"),
-                end:item.getAttribute("data-animate-translateX-end"),
-                ease:item.getAttribute("data-animate-translateX-ease"),
-                scrub:true,
-            }
-        });
+            gsap.utils.toArray(".translateX-animation").forEach((item) => {
+                gsap.from(item, {css:{x:item.getAttribute("data-animate-translateX-startpos")}});
 
-        jsE(item);
-    });
+                gsap.to(item, {css:{x:item.getAttribute("data-animate-translateX-endpos")},
+                    scrollTrigger: {
+                        trigger:item,
+                        start:item.getAttribute("data-animate-translateX-start"),
+                        end:item.getAttribute("data-animate-translateX-end"),
+                        ease:item.getAttribute("data-animate-translateX-ease"),
+                        scrub:true,
+                    }
+                });
 
-    gsap.utils.toArray(".translateY-animation").forEach((item) => {
-        item.style.translateY=item.getAttribute("data-animate-translateY-startpos");
-        gsap.from(item, {css:{y:item.getAttribute("data-animate-translateY-startpos")}});
+                jsE(item);
+            });
 
-        gsap.to(item, {css:{y:item.getAttribute("data-animate-translateY-endpos")},
-            scrollTrigger: {
-                trigger:item,
-                start:item.getAttribute("data-animate-translateY-start"),
-                end:item.getAttribute("data-animate-translateY-end"),
-                ease:item.getAttribute("data-animate-translateY-ease"),
-                scrub:true,
-            }
-        });
+            gsap.utils.toArray(".translateY-animation").forEach((item) => {
+                item.style.translateY=item.getAttribute("data-animate-translateY-startpos");
+                gsap.from(item, {css:{y:item.getAttribute("data-animate-translateY-startpos")}});
 
-        jsE(item);
+                gsap.to(item, {css:{y:item.getAttribute("data-animate-translateY-endpos")},
+                    scrollTrigger: {
+                        trigger:item,
+                        start:item.getAttribute("data-animate-translateY-start"),
+                        end:item.getAttribute("data-animate-translateY-end"),
+                        ease:item.getAttribute("data-animate-translateY-ease"),
+                        scrub:true,
+                    }
+                });
+
+                jsE(item);
+            });
+
+        },
+
+        "(prefers-reduced-motion: reduce)": function() {
+
+            console.log(1)
+
+            gsap.utils.toArray(".color-animation").forEach((item) => {
+                item.style.setProperty("--color-animation-changed",item.getAttribute("data-animate-color-endcolor"));
+                jsE(item);
+            });
+
+            gsap.utils.toArray(".opacity-animation").forEach((item) => {
+                item.style.opacity=item.getAttribute("data-animate-opacity-endopacity");
+                jsE(item);
+            });
+
+            gsap.utils.toArray(".translateX-animation").forEach((item) => {
+                gsap.set(item, {css:{x:item.getAttribute("data-animate-translateX-endpos")}});
+                jsE(item);
+            });
+
+            gsap.utils.toArray(".translateY-animation").forEach((item) => {
+                item.style.translateY=item.getAttribute("data-animate-translateY-endpos");
+                gsap.set(item, {css:{y:item.getAttribute("data-animate-translateY-endpos")}});
+                jsE(item);
+            });
+
+        }
     });
 });
