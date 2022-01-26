@@ -91,7 +91,7 @@
     height: 150px;
     width: 600px;
     background: #616060;
-box-shadow: inset 10px 10px 20px #525252,
+    box-shadow: inset 10px 10px 20px #525252,
             inset -10px -10px 20px #706e6e,5px 5px 32px #5b5a5a8a,
              -5px -5px 32px #6766668a;
     border-radius: 2em;
@@ -501,4 +501,15 @@ body {
 .section.three .bento-box.six .bento-box-content {
     justify-content: space-evenly;
     align-items: center
+}
+
+.sections {
+    width:100vw;
+    position: absolute;
+    left: 100%;
+    transition: left 200ms ease-out;
+}
+
+.section.five .headline-vertical-list .text {
+    margin-bottom:64px;
 }
