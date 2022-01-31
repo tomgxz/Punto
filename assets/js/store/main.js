@@ -3,7 +3,7 @@ $(document).ready(function() {
     function shiftSections(selected) {
         itera=selected-1;
         document.querySelectorAll(".sections").forEach((item) => {
-            item.style.left="{}%".replace("{}",-100*itera);
+            item.style.left="{}px".replace("{}",-1*item.offsetWidth*itera);
             itera-=1;
         });
         loadAnimations(selected);
@@ -100,13 +100,17 @@ $(document).ready(function() {
                         });
 
                     });
-                
+
+                    gsap.set(".section.seven",{autoAlpha:0});
+
                 }
 
             });
         }
 
         if (selected==2) {
+            gsap.set(".section.seven",{autoAlpha:1});
+
             gsap.utils.toArray(".section.five .headline-vertical-list .text").forEach((item) => {
                 gsap.set(item,{css:{opacity:0,y:120}});
 
@@ -117,20 +121,89 @@ $(document).ready(function() {
                         y: 0,
                         opacity: 1,
                     }),
-                    onLeave: () => gsap.to(item, {
-                        y: -120,
-                        opacity: 0,
-                    }),
-                    onEnterBack: () => gsap.to(item, {
-                        y: 0,
-                        opacity: 1,
-                    }),
                     onLeaveBack: () => gsap.to(item, {
                         y: 120,
                         opacity: 0,
                     }),
                 });
 
+            });
+
+            gsap.utils.toArray(".section.six .figure-container.one .figure").forEach((item) => {
+                gsap.set(item,{css:{opacity:0,backgroundSize:"0px 495.5px",transform:"skew(341deg, 16deg)"}});
+
+                ScrollTrigger.create({
+                    trigger: item,
+                    start: "top+=20% bottom",
+                    onEnter: () => gsap.to(item, {
+                        backgroundSize:"932px 495.5px",
+                        opacity: 1,
+                        transform: "skew(0deg, 0deg)",
+                    }),
+                    onLeaveBack: () => gsap.to(item, {
+                        backgroundSize:"0px 495.5px",
+                        opacity: 0,
+                        transform: "skew(341deg, 16deg)",
+                    }),
+                });
+
+            });
+
+            gsap.set(".section.seven .figure-container.one .figure.one", {css:{x:"-50%"}});
+            gsap.set(".section.seven .figure-container.one .figure.two", {css:{x:"-50%"}});
+                
+            gsap.to(".section.seven .figure-container.one .figure.one", {css:{x:"-85%"},
+                scrollTrigger: {
+                    trigger: ".section.seven",
+                    pin: ".section.seven",
+                    anticipatePin:1,
+                    start: "top top",
+                    end: "+=800",
+                    scrub:true,
+                }
+            });
+
+            gsap.to(".section.seven .figure-container.one .figure.two", {css:{x:"-15%"},
+                scrollTrigger: {
+                    trigger: ".section.seven",
+                    start: "top top",
+                    end: "+=800",
+                    scrub:true,
+                }
+            });
+
+            gsap.set(".section.eight .image-wrapper .image-overflow-crop", {css:{y:150}})
+
+            gsap.to(".section.eight .image-wrapper .image-overflow-crop", {css:{y:0},
+                scrollTrigger: {
+                    trigger: ".section.eight",
+                    start: "top bottom",
+                    end: "bottom bottom",
+                    scrub:true,
+                }
+            });
+
+            gsap.set("body",{css:{backgroundColor:"rgb(131, 174, 236)"}})
+
+            gsap.to("body",{css:{transition:"none"},scrollTrigger:{trigger:".section.seven",start:"top bottom",scrub:true,}});
+            gsap.to("body",{css:{backgroundColor:"rgb(2 108 72)"},
+                scrollTrigger: {
+                    trigger:".section.eight",
+                    start:"top bottom",
+                    end:"bottom bottom",
+                    scrub:true
+                }
+            });
+
+            gsap.to(".section.eight .image-wrapper picture",{css:{filter:"drop-shadow(0px -94px 25px rgb(131, 174, 236))"}});
+
+            gsap.to(".section.eight .image-wrapper picture",{css:{filter:"drop-shadow(0px -94px 25px rgb(2 108 72))"},
+                scrollTrigger: {
+                    trigger:".section.eight",
+                    start:"top bottom",
+                    end:"bottom bottom",
+                    scrub:true
+                }
             });
         }
     }

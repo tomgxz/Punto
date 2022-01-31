@@ -510,6 +510,91 @@ body {
     transition: left 200ms ease-out;
 }
 
-.section.five .headline-vertical-list .text {
+.section.five .headline-vertical-list .text:not(:last-child) {
     margin-bottom:64px;
+}
+
+.section.six .figure-container .figure,
+.section.seven .figure-container .figure {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section.six .figure-container.one .figure {
+    background-image:url(../img/mockups/iphoneXrBlackLayingScreen1_1920x991.png);
+    width: calc(1920px / 2);
+    height: calc(991px / 2);
+    filter: drop-shadow(3px 10px 14px rgba(0,0,0,.6));
+    background-size: 932px 495.5px;
+    background-size: 0px 495.5px;
+    transform: none;
+    transform: skew(341deg, 16deg);
+}
+
+.section.seven {
+    height:800px;
+    left: 0!important;
+}
+
+.section.seven .figure-container.one {
+    position:relative;
+    height: 800px;
+}
+
+.section.seven .figure-container.one .figure {
+    position:absolute;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.section.seven .figure-container.one .figure.one {
+    background-image:url(../img/mockups/iphone12ProPacificBluePortraitScreen1_765x1446.png);
+    width: 382.5px;
+    height: 723px;
+    z-index:2;
+}
+
+.section.seven .figure-container.one .figure.two {
+    background-image:url(../img/mockups/iphone12BlackPortraitScreen2_700x1330.png);
+    width: 350px;
+    height: 665px;
+    z-index:1;
+    top: 30px;
+}
+
+.section.seven .figure-container.one {
+    width:1080px;
+}
+
+.section.eight .section-content .text.one {
+    width:1000px;
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 600;
+}
+
+.section.eight .image-wrapper {
+    width: 100%;
+    position: sticky;
+    z-index: 1;
+    bottom: -190px;
+}
+
+.section.eight .image-wrapper .image-overflow-crop {
+    width: 100%;
+}
+
+.section-nonconform {
+    display: block;
+}
+
+.section.eight .image-wrapper picture {
+    filter: drop-shadow(0px -94px 25px rgb(131, 174, 236));
+    display: flex;
+    justify-content: center;
+}
+
+.section.eight .section-content {
+    padding-bottom: 96px;
 }
