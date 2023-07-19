@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     ScrollTrigger.matchMedia({
         "(prefers-reduced-motion: no-preference)": function() {
-    
+
             letterWrapper(".globalnav .globalnav-link-text");
             letterWrapper(".section.one .section-header-container .text.one");
 
@@ -731,7 +731,7 @@ $(document).ready(function() {
             });
 
             var options = {
-                strings: ["Hi rags", "Hi rag's^1000ssssssss", "Copyright © 2021 Punto. All Rights Reserved.^2000", ],
+                strings: ["Hi rags", "Hi rag's^1000ssssssss", "Copyright © 2021 Tom_gxz. All Rights Reserved.^2000", ],
                 typeSpeed: 50,
                 smartBackspace: true,
                 loop: true,
@@ -739,7 +739,7 @@ $(document).ready(function() {
 
             var typed = new Typed('.footer-copyright .text.one', options);
 
-            
+
 
         },
 
