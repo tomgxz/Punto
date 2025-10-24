@@ -2,11 +2,6 @@
   base = ""
   publish = "site"
   command = ""
-
-[[redirects]]
-  from = "/*/index.html"
-  to = "/:splat/"
-  status = 301
   force = true
 
 [[redirects]]
@@ -14,6 +9,11 @@
   to = "/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/*/index.html"
+  to = "/:splat/"
+  status = 301
 
 [[redirects]]
   from = "/*"
